@@ -78,9 +78,9 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="h-screen w-full bg-gray-800">
-      <div className="relative flex items-center justify-center h-full w-full">
-        <img src={HomeImg} alt="Home-img" className="w-full h-auto " />
+    <div className="Container w-full bg-gray-800">
+      <div className="Home relative flex items-center justify-center h-full w-full">
+        {/* <img src={HomeImg} alt="Home-img" className="w-full h-auto  " /> */}
 
         <div className="left-content absolute left-10">
           <h1 className="text-4xl text-gray-600 font-bold mb-4">Welcome to Our Website</h1>
@@ -99,6 +99,9 @@ const Home = () => {
           <img src={PinkCube} alt="" className="WhiteCube4 absolute top-40 right-100 w-35" />
           <img src={ball} alt="" className="ball absolute top-110 right-100 w-16" />
         </div>
+      </div>
+      <div className="Home2 h-screen w-full ">
+
       </div>
     </div>
   );
