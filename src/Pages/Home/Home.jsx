@@ -21,7 +21,6 @@ const Home = () => {
         start: 'top 50%',
         end: 'top 70%',
         scrub: 2,
-        markers: true, 
       },
     });
 
@@ -35,7 +34,6 @@ const Home = () => {
         start: 'top 50%',
         end: 'top 70%',
         scrub: 2,
-        markers: true, // Debug markers
       },
     });
 
@@ -49,7 +47,6 @@ const Home = () => {
         start: 'top 50%',
         end: 'top 70%',
         scrub: 2,
-        markers: true, // Debug markers
       },
     });
 
@@ -63,7 +60,6 @@ const Home = () => {
         start: 'top 50%',
         end: 'top 70%',
         scrub: 2,
-        markers: true, // Debug markers
       },
     });
 
@@ -77,7 +73,6 @@ const Home = () => {
         start: 'top 50%',
         end: 'top 70%',
         scrub: 2,
-        markers: true, // Debug markers
       },
     });
   }, []);
