@@ -82,7 +82,7 @@ const Home = () => {
           <img src={whiteCube} alt="" className="WhiteCube2 absolute top-50 right-120 w-35" />
           <img src={whiteCube} alt="" className="WhiteCube3 absolute top-50 right-80 w-35" />
           <img src={PinkCube} alt="" className="WhiteCube4 absolute top-40 right-100 w-35" />
-          <img src={ball} alt="" className="ball absolute top-110 right-105 w-16" />
+          <img src={ball} alt="" className="ball absolute top-110 right-100 w-16" />
 
      
         </div>
