@@ -100,9 +100,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="Home2 h-screen w-full bg-gray-800 ">
-
-      </div>
+      
     </div>
   );
 };
