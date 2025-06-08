@@ -18,9 +18,10 @@ const Home = () => {
       ease: 'power1.inOut',
       scrollTrigger: {
         trigger: '.animation-container',
-        start: 'top 50%',
+        start: 'top 48%',
         end: 'top 70%',
         scrub: 2,
+        markers: true, 
       },
     });
 
@@ -31,7 +32,7 @@ const Home = () => {
       ease: 'power1.inOut',
       scrollTrigger: {
         trigger: '.animation-container',
-        start: 'top 50%',
+        start: 'top 48%',
         end: 'top 70%',
         scrub: 2,
       },
@@ -44,7 +45,7 @@ const Home = () => {
       ease: 'power1.inOut',
       scrollTrigger: {
         trigger: '.animation-container',
-        start: 'top 50%',
+        start: 'top 48%',
         end: 'top 70%',
         scrub: 2,
       },
@@ -57,7 +58,7 @@ const Home = () => {
       ease: 'power1.inOut',
       scrollTrigger: {
         trigger: '.animation-container',
-        start: 'top 50%',
+        start: 'top 48%',
         end: 'top 70%',
         scrub: 2,
       },
@@ -70,16 +71,16 @@ const Home = () => {
       ease: 'power1.inOut',
       scrollTrigger: {
         trigger: '.animation-container',
-        start: 'top 50%',
+        start: 'top 48%',
         end: 'top 70%',
         scrub: 2,
       },
     });
-  }, []);
+  }, ['.animation-container', '.WhiteCube1', '.WhiteCube2', '.WhiteCube3', '.WhiteCube4', '.ball']);
 
   return (
-    <div className="Container w-full bg-gray-800">
-      <div className="Home relative flex items-center justify-center h-full w-full">
+    <div className="Container w-full">
+      <div className="Home bg-gray-800 relative flex items-center justify-center h-full w-full">
         {/* <img src={HomeImg} alt="Home-img" className="w-full h-auto  " /> */}
 
         <div className="left-content absolute left-10">
@@ -100,7 +101,8 @@ const Home = () => {
           <img src={ball} alt="" className="ball absolute top-110 right-100 w-16" />
         </div>
       </div>
-      <div className="Home2 h-screen w-full ">
+
+      <div className="Home2 h-screen w-full bg-gray-800 ">
 
       </div>
     </div>
