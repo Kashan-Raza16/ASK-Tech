@@ -10,4 +10,18 @@
     background-repeat: no-repeat;
     aspect-ratio: 16/9;
    
+   
+}
+
+
+@font-face {
+    font-family: 'batmfa'; /* The name you'll use in your CSS */
+    src: url('./assets/font/batmfa.ttf') format('woff2'); /* Path to your font file */
+    font-weight: 400; /* This file is for the regular weight */
+    font-style: normal;
+    font-display: swap; /* Show fallback text while loading, then swap */
+  }
+
+.batmfa{
+    font-family: batmfa;
 }
