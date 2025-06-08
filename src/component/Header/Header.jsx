@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Search, Menu, X } from 'lucide-react';
 import Logo from "../../assets/img/ask logo.png"
+// import Logo from "../../assets/img/logo-min.png"
+
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -11,7 +13,7 @@ const Header = () => {
       <div className="flex items-center space-x-6 gap-20 md:space-x-10">
         {/* Logo */}
         <div className="w-20 h-20  rounded-full flex items-center justify-center text-black font-bold">
-          <img src={Logo} alt="" className='invert-80 hover:scale-90 cursor-pointer transition-transform duration-300 ease-in-out ' />
+          <img src={Logo} alt="" className='hover:scale-90 cursor-pointer transition-transform duration-300 ease-in-out ' />
         </div>
 
         {/* Nav Links (Hidden on mobile) */}
