@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import React, { useEffect, useState } from "react";
 import purleCube from "../../assets/img/purpal-cube.png";
-import pinkCube from "../../assets/img/new-pink-cube.png";
+import pinkCube from "../../assets/img/PINK-CUBE.png";
 import whiteCube from "../../assets/img/cube.png";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -42,11 +42,11 @@ const HowWrok = () => {
     console.log("useEffect executed");
 
     gsap.to('.Floating-pink-cube', {
-      y: -25,
+      y: -40,
       duration: 2,
       ease: 'power1.inOut',
       scrollTrigger: {
-        scroller: "body",
+      scroller: "body",
       trigger: '.Floating-pink-cube',
       start: '50% 50%',
       end: 'bottom bottom',
@@ -68,7 +68,7 @@ const HowWrok = () => {
 
     gsap.to('.Floating-white-cube2', {
       x: 25,
-      y: 20,
+      // y: 20,
       duration: 2,
       ease: 'power1.inOut',
       scrollTrigger: {
@@ -134,12 +134,12 @@ const HowWrok = () => {
             <img
               src={whiteCube}
               alt="Floating-white-cube1"
-              className="Floating-white-cube1 absolute object-contain w-24 h-[0rem] md:w-32 md:h-[10rem] top-[30%] left-[10%] lg:left-[25%]"
+              className="Floating-white-cube1 absolute object-contain w-24 h-[0rem] md:w-32 md:h-[10rem] top-[30%] left-[10%] lg:left-[27%]"
             />
             <img
               src={pinkCube}
               alt="Floating-pink-cube"
-              className="Floating-pink-cube absolute object-contain w-24 h-[30rem] md:w-32 md:h-[10rem] top-[17%] right-[10%] lg:right-[35%]"
+              className="Floating-pink-cube absolute object-contain w-24 h-[30rem] md:w-32 md:h-[10rem] top-[17%] right-[10%] lg:right-[30%]"
             />
             <img
               src={whiteCube}
@@ -149,7 +149,7 @@ const HowWrok = () => {
             <img
               src={purleCube}
               alt="Floating-purple-cube"
-              className="Floating-purple-cube absolute object-contain w-24 h-[30rem] md:w-32 md:h-[10rem] top-[42%] right-[10%] lg:right-[32%]"
+              className="Floating-purple-cube absolute object-contain w-24 h-[30rem] md:w-32 md:h-[10rem] top-[43%] right-[10%] lg:right-[30%]"
             />
 
             {/* Spheres using styled divs */}
@@ -163,7 +163,7 @@ const HowWrok = () => {
             ></div>
             <div
               style={{ animationDelay: "-4s" }}
-              className="absolute rounded-full shadow-[0px_4px_10px_#808080] bg-[#F9A825] w-8 h-8 md:w-10 md:h-10 top-[37%] right-[40%]"
+              // className="absolute rounded-full shadow-[0px_4px_10px_#808080] bg-[#F9A825] w-8 h-8 md:w-10 md:h-10 top-[37%] right-[92%]"
             ></div>
             <div
               style={{ animationDelay: "-2.5s" }}

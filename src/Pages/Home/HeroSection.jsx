@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import ball from '../../assets/img/Ball1.png';
-import PinkCube from '../../assets/img/PINK-CUBE.png';
+import PinkCube from '../../assets/img/new-pink-cube.png';
 import whiteCube from '../../assets/img/CUBE WHITE.png';
 
 // Register the ScrollTrigger plugin with GSAP
@@ -13,7 +13,7 @@ const HeroSection = () => {
     // Animate .WhiteCube1 based on scroll
     gsap.to('.WhiteCube1', {
       y: -10,
-      duration: 2,
+      // duration: 2,
       ease: 'power1.inOut',
       scrollTrigger: {
         trigger: '.animation-container',
@@ -26,7 +26,7 @@ const HeroSection = () => {
     // Animate .WhiteCube2 based on scroll
     gsap.to('.WhiteCube2', {
       x: -25,
-      duration: 2,
+      // duration: 2,
       ease: 'power1.inOut',
       scrollTrigger: {
         trigger: '.animation-container',
@@ -39,7 +39,7 @@ const HeroSection = () => {
     // Animate .WhiteCube3 based on scroll
     gsap.to('.WhiteCube3', {
       x: 25,
-      duration: 2,
+      // duration: 2,
       ease: 'power1.inOut',
       scrollTrigger: {
         trigger: '.animation-container',
@@ -52,7 +52,7 @@ const HeroSection = () => {
     // Animate .WhiteCube4 based on scroll
     gsap.to('.WhiteCube4', {
       y: -90,
-      duration: 2,
+      // duration: 2,
       ease: 'power1.inOut',
       scrollTrigger: {
         trigger: '.animation-container',
@@ -65,7 +65,7 @@ const HeroSection = () => {
     // Animate .ball based on scroll
     gsap.to('.ball', {
       y: -75,
-      duration: 2,
+      // duration: 2,
       ease: 'power1.inOut',
       scrollTrigger: {
         trigger: '.animation-container',
