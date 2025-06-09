@@ -81,7 +81,7 @@ const HowWrok = () => {
             {/* Spheres using styled divs */}
             <div style={{ animationDelay: '-1s' }} className={`absolute rounded-full shadow-xl bg-white w-6 h-6 md:w-8 md:h-8 top-[20%] right-[45%] `}></div>
             <div style={{ animationDelay: '-2.5s' }} className={`absolute rounded-full shadow-xl bg-white w-5 h-5 md:w-7 md:h-7 top-[30%] right-[10%]`}></div>
-            <div style={{ animationDelay: '-4s' }} className={`absolute rounded-full shadow-xl bg-[#F9A825] w-8 h-8 md:w-10 md:h-10 top-1/2 right-[30%] transform -translate-y-1/2`}></div>
+            <div style={{ animationDelay: '-4s' }} className={`absolute rounded-full shadow-xl bg-[#F9A825] w-8 h-8 md:w-10 md:h-10 top-1/2 right-[30%] transform -translate-y-1/2             git add <conflicted-file>`}></div>
           </div>
         </div>
       </main>
