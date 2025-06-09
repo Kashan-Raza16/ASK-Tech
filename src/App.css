@@ -1,14 +1,19 @@
 @import "tailwindcss";
 
+@theme {
+    --breakpoint-ls: 300px;
+    --breakpoint-2xl: 100rem;
+    --breakpoint-3xl: 120rem;
+}
 
 
 
 .Home{
 
-    background-image: url(./assets/img/Home_1.jpg);
+    background-image: url(./assets/img/Home_3.jpg);
     background-size: 100%  100%  ;
     background-repeat: no-repeat;
-    aspect-ratio: 16/9;
+    aspect-ratio: 14/7;
    
    
 }

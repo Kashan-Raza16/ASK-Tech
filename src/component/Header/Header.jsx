@@ -8,21 +8,21 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className=" fixed top-0 z-45  w-full text-gray-600 text-[18px] px-4 md:px-6 py-6 flex items-center justify-between">
+    <nav className=" fixed top-0 z-45  w-full text-gray-900 text-[18px] px-4 md:px-6 py-6 flex items-center justify-between">
       
       <div className="flex items-center space-x-6 gap-20 md:space-x-10">
         {/* Logo */}
         <div className="w-20 h-20  rounded-full flex items-center justify-center text-black font-bold">
-          <img src={Logo} alt="" className='hover:scale-90 cursor-pointer transition-transform duration-300 ease-in-out ' />
+          <img src={Logo} alt="" className='hover:scale-120  cursor-pointer transition-transform invert duration-300 ease-in-out  ' />
         </div>
 
         {/* Nav Links (Hidden on mobile) */}
         <ul className={`flex-col md:flex-row absolute md:static top-16 left-0 w-full md:w-auto bg-[#1c2431] md:bg-transparent px-6 md:px-0 md:flex space-y-2 md:space-y-0 md:space-x-6 font-semibold text-md transition-all duration-300 ${mobileMenuOpen ? 'flex' : 'hidden'}`}>
-          <li className="cursor-pointer border-b-[3px] hover:scale-110 border-transparent pb-1 transition-all duration-200">Home</li>
-          <li className="cursor-pointer border-b-[3px] hover:scale-110 border-transparent pb-1 transition-all duration-200">Service</li>
-          <li className="cursor-pointer border-b-[3px] hover:scale-110 border-transparent pb-1 transition-all duration-200">Product's</li>
-          <li className="cursor-pointer border-b-[3px] hover:scale-110 border-transparent pb-1 transition-all duration-200">About</li>
-          <li className="cursor-pointer border-b-[3px] hover:scale-110 border-transparent pb-1 transition-all duration-200">Contact</li>
+          <li className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Home</li>
+          <li className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Service</li>
+          <li className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Product's</li>
+          <li className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">About</li>
+          <li className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Contact</li>
         </ul>
       </div>
 
