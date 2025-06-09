@@ -64,7 +64,6 @@ const HowWrok = () => {
         start: '60% 60%',
         end: 'bottom bottom',
         scrub: 2,
-        // markers: true,
       },
     });
 
@@ -78,7 +77,6 @@ const HowWrok = () => {
         start: 'top 50%',
         end: 'bottom bottom',
         scrub: 2,
-        // markers: true,
       },
     });
 
@@ -91,7 +89,6 @@ const HowWrok = () => {
         start: 'top 55%',
         end: 'bottom bottom',
         scrub: 2,
-        // markers: true,
       },
     });
 
