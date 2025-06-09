@@ -51,7 +51,6 @@ const HowWrok = () => {
       start: '50% 50%',
       end: 'bottom bottom',
       scrub: 2,
-      markers: true,
       },
     });
 
