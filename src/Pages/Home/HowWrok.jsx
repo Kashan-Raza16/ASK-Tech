@@ -37,12 +37,13 @@ const ScrollUpDownIcon = () => (
 
 const HowWrok = () => {
   const [isHovered, setIsHovered] = useState(false);
+  
 
   useEffect(() => {
     console.log("useEffect executed");
 
     gsap.to('.Floating-pink-cube', {
-      y: -40,
+      y: -80,
       duration: 2,
       ease: 'power1.inOut',
       scrollTrigger: {
@@ -55,7 +56,7 @@ const HowWrok = () => {
     });
 
     gsap.to('.Floating-white-cube1', {
-      x: -25,
+      y: 90,
       duration: 2,
       ease: 'power1.inOut',
       scrollTrigger: {
@@ -67,7 +68,8 @@ const HowWrok = () => {
     });
 
     gsap.to('.Floating-white-cube2', {
-      x: 25,
+      x: 130,
+      y:30,
       // y: 20,
       duration: 2,
       ease: 'power1.inOut',
@@ -80,7 +82,7 @@ const HowWrok = () => {
     });
 
     gsap.to('.Floating-purple-cube', {
-      y: 25,
+      x: -135,
       duration: 2,
       ease: 'power1.inOut',
       scrollTrigger: {
@@ -91,11 +93,20 @@ const HowWrok = () => {
       },
     });
 
+
+
+    //===========================================================
+    
+
+    
+
   }, []);
 
+  
+
   return (
-    <div className="bg-gray-100 min-h-screen w-full flex items-center justify-center p-4 sm:p-6 lg:p-8">
-      <main className="relative bg-[#5A45CB] h-auto md:h-[90vh] w-full max-w-7xl mx-auto rounded-3xl lg:rounded-[40px] p-6 sm:p-8 md:p-12 lg:p-16 text-white font-sans overflow-hidden">
+    <div className=" h-screen w-full flex page4  ">
+      <main className="relative bg-[#5A45CB] h-screen w-full  p-8 text-white font-sans overflow-hidden">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-16">
           {/* Left Column: Text Content */}
           <div className="relative z-10 w-full md:w-1/2 flex-shrink-0 text-center md:text-left">
@@ -134,22 +145,22 @@ const HowWrok = () => {
             <img
               src={whiteCube}
               alt="Floating-white-cube1"
-              className="Floating-white-cube1 absolute object-contain w-24 h-[0rem] md:w-32 md:h-[10rem] top-[30%] left-[10%] lg:left-[27%]"
+              className="Floating-white-cube1 absolute object-contain w-24 h-[0rem] md:w-32 md:h-[10rem] top-[30%] left-[10%] lg:left-[51%]"
             />
             <img
               src={pinkCube}
               alt="Floating-pink-cube"
-              className="Floating-pink-cube absolute object-contain w-24 h-[30rem] md:w-32 md:h-[10rem] top-[17%] right-[10%] lg:right-[30%]"
+              className="Floating-pink-cube absolute object-contain w-24 h-[30rem] md:w-32 md:h-[10rem] top-[30%] right-[10%] lg:right-[30%]"
             />
             <img
               src={whiteCube}
               alt="Floating-white-cube2"
-              className="Floating-white-cube2 absolute object-contain w-24 h-[30rem] md:w-32 md:h-[10rem] top-[30%] right-[10%] lg:right-[13%]"
+              className="Floating-white-cube2 z-5 absolute object-contain w-24 h-[30rem] md:w-32 md:h-[10rem] top-[30%] right-[10%] lg:right-[30%]"
             />
             <img
               src={purleCube}
               alt="Floating-purple-cube"
-              className="Floating-purple-cube absolute object-contain w-24 h-[30rem] md:w-32 md:h-[10rem] top-[43%] right-[10%] lg:right-[30%]"
+              className="Floating-purple-cube z-1 absolute object-contain w-24 h-[30rem] md:w-32 md:h-[10rem] top-[30%] right-[10%] lg:right-[30%]"
             />
 
             {/* Spheres using styled divs */}
