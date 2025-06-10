@@ -77,7 +77,7 @@ const HeroSection = () => {
   }, ['.animation-container', '.WhiteCube1', '.WhiteCube2', '.WhiteCube3', '.WhiteCube4', '.ball']);
 
   return (
-    <div className="Container w-full">
+    <div className="Container h-screen w-full">
       <div className="Home max-[400px]:hidden bg-gray-800 relative flex items-center justify-center h-full w-full">
        
         <div className="left-content absolute left-10 top-45">

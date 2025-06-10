@@ -21,8 +21,8 @@ const Header = () => {
           <li className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Home</li>
           <li className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Service</li>
           <li className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Product's</li>
-          <li className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">About</li>
           <li className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Contact</li>
+          <li className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">About</li>
         </ul>
       </div>
 
