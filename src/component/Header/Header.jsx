@@ -27,11 +27,12 @@ const Header = () => {
       </div>
 
       <div className="flex items-center space-x-3 md:space-x-4">
-        {/* <button className="bg-white cursor-pointer text-black px-4 py-2 rounded-full font-medium hidden md:inline-block hover:bg-gray-300 transition-colors duration-200">Intogolf</button> */}
         {/* <button className="bg-white cursor-pointer text-black px-4 py-2 rounded-full font-medium hidden md:inline-block hover:bg-gray-300 transition-transform duration-300 ease-in-out">Leden login</button> */}
         <button className="w-10 h-10 bg-white cursor-pointer rounded-full border border-white flex items-center justify-center hover:scale-110 transition-transform duration-300 ease-in-out">
           <Search size={22} />
         </button>
+        <button className="bg-white cursor-pointer text-black px-4 py-2 rounded-full font-medium hidden md:inline-block hover:bg-gray-300 transition-colors duration-200">Login</button>
+
         <button
           className="md:hidden ml-2 cursor-pointer"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

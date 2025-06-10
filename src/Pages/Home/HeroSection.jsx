@@ -77,12 +77,12 @@ const HeroSection = () => {
   }, ['.animation-container', '.WhiteCube1', '.WhiteCube2', '.WhiteCube3', '.WhiteCube4', '.ball']);
 
   return (
-    <div className="Container h-screen w-full">
+    <div className="Container h-screen w-full font-inter">
       <div className="Home max-[400px]:hidden bg-gray-800 relative flex items-center justify-center h-full w-full">
        
-        <div className="left-content absolute left-10 top-45">
-         <h1 className='text-[40px] batmfa text-gray-900'>Elevate With ASK <br /> Technology</h1>
-         <h1 className='text-[20px] batmfa text-gray-900'>Welcome to <b>ASK Technology Solution</b></h1>
+        <div className="left-content absolute pl-20 left-10 top-45">
+         <h1 className='text-[40px] font-extrabold font-sans  text-gray-900'>Elevate with ASK <br /> technology</h1>
+         <h1 className='text-[20px]  text-gray-900'>Welcome to <b>ASK Technology Solution</b></h1>
          <p className='text-[15px] text-gray-900 mt-5'> <b> —your premier partner in transforming bold ideas <br />
           into refined digital masterpieces. We specialize in bespoke web design,<br />
          high-performance web development, and next-generation <br />
