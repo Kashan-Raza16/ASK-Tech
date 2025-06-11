@@ -5,23 +5,28 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import '../../../style.css';
 
 const Card = () => {
   return (
-    <div className='h-screen bg-white-100'>
+    <div className='pl-28 pr-28 h-screen bg-white-100'>
       
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
-        className="mySwiper h-screen "
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper h-screen pb-5 "
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>slide1</SwiperSlide>
+        <SwiperSlide className='rounded-lg shadow-lg '>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
         <SwiperSlide>Slide 5</SwiperSlide>
