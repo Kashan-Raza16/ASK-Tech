@@ -89,7 +89,7 @@ const HeroSection = () => {
            high-performance web development, and next-generation
            mobile applications for both iOS and Android platforms.
          </p>
-          <button className="bg-[#3325ae] cursor-pointer text-white text-xl font-bold px-8 py-4 mt-10 rounded-lg hover:bg-blue-600 transition duration-300">
+          <button className="bg-[#3325ae] cursor-pointer text-white text-xl font-bold px-8 py-4 mt-15 rounded-lg hover:bg-blue-600 transition duration-300">
             Get Started
           </button>
         </div>
