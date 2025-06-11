@@ -13,7 +13,7 @@ const Card = () => {
     <div className='pl-28 pr-28 h-screen bg-white-100'>
       
       <Swiper
-        slidesPerView={3}
+        slidesPerView={4}
         spaceBetween={30}
         autoplay={{
           delay: 2500,
@@ -25,15 +25,167 @@ const Card = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper h-screen pb-5 "
       >
-        <SwiperSlide>slide1</SwiperSlide>
-        <SwiperSlide className='rounded-lg shadow-lg '>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide>
+          <div className="slide1  text-center mt-5 p-5 ">
+              <div className="image h-60 w-60 ml-auto mr-auto ">
+                <img src=""  className="bg-red-500 ml-5 rounded-[50%] w-50  h-50" alt="" srcset="" />
+
+              </div>
+              <div className="description  text-gray-900">
+                <h1>Heading</h1>
+
+                <p className=" mt-5"> adipisicing elit. Eveniet, nihil? ipsum dolor sit amet consectetur adipisicing elit. Vitae, quas.</p>
+                <button className=" bg-red-300 text-white rounded-lg p-2 mt-2"> Know More</button>
+              </div>
+          
+          
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slide1  text-center mt-5 p-5 ">
+              <div className="image h-60 w-60 ml-auto mr-auto ">
+                <img src=""  className="bg-green-500 ml-5 rounded-[50%] w-50  h-50" alt="" srcset="" />
+
+              </div>
+              <div className="description  text-gray-900">
+                <h1>Heading</h1>
+
+                <p className=" mt-5"> adipisicing elit. Eveniet, nihil? ipsum dolor sit amet consectetur adipisicing elit. Vitae, quas.</p>
+                <button className=" bg-green-300 text-white rounded-lg p-2 mt-2"> Know More</button>
+              </div>
+          
+          
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slide1  text-center mt-5 p-5 ">
+              <div className="image h-60 w-60 ml-auto mr-auto ">
+                <img src=""  className="bg-blue-500 ml-5 rounded-[50%] w-50  h-50" alt="" srcset="" />
+
+              </div>
+              <div className="description  text-gray-900">
+                <h1>Heading</h1>
+
+                <p className=" mt-5"> adipisicing elit. Eveniet, nihil? ipsum dolor sit amet consectetur adipisicing elit. Vitae, quas.</p>
+                <button className=" bg-blue-300 text-white rounded-lg p-2 mt-2"> Know More</button>
+              </div>
+          
+          
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slide1  text-center mt-5 p-5 ">
+              <div className="image h-60 w-60 ml-auto mr-auto ">
+                <img src=""  className="bg-green-500 ml-5 rounded-[50%] w-50  h-50" alt="" srcset="" />
+
+              </div>
+              <div className="description  text-gray-900">
+                <h1>Heading</h1>
+
+                <p className=" mt-5"> adipisicing elit. Eveniet, nihil? ipsum dolor sit amet consectetur adipisicing elit. Vitae, quas.</p>
+                <button className=" bg-green-300 text-white rounded-lg p-2 mt-2"> Know More</button>
+              </div>
+          
+          
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slide1  text-center mt-5 p-5 ">
+              <div className="image h-60 w-60 ml-auto mr-auto ">
+                <img src=""  className="bg-blue-500 ml-5 rounded-[50%] w-50  h-50" alt="" srcset="" />
+
+              </div>
+              <div className="description  text-gray-900">
+                <h1>Heading</h1>
+
+                <p className=" mt-5"> adipisicing elit. Eveniet, nihil? ipsum dolor sit amet consectetur adipisicing elit. Vitae, quas.</p>
+                <button className=" bg-blue-300 text-white rounded-lg p-2 mt-2"> Know More</button>
+              </div>
+          
+          
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slide1  text-center mt-5 p-5 ">
+              <div className="image h-60 w-60 ml-auto mr-auto ">
+                <img src=""  className="bg-red-500 ml-5 rounded-[50%] w-50  h-50" alt="" srcset="" />
+
+              </div>
+              <div className="description  text-gray-900">
+                <h1>Heading</h1>
+
+                <p className=" mt-5"> adipisicing elit. Eveniet, nihil? ipsum dolor sit amet consectetur adipisicing elit. Vitae, quas.</p>
+                <button className=" bg-red-300 text-white rounded-lg p-2 mt-2"> Know More</button>
+              </div>
+          
+          
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slide1  text-center mt-5 p-5 ">
+              <div className="image h-60 w-60 ml-auto mr-auto ">
+                <img src=""  className="bg-orange-500 ml-5 rounded-[50%] w-50  h-50" alt="" srcset="" />
+
+              </div>
+              <div className="description  text-gray-900">
+                <h1>Heading</h1>
+
+                <p className=" mt-5"> adipisicing elit. Eveniet, nihil? ipsum dolor sit amet consectetur adipisicing elit. Vitae, quas.</p>
+                <button className=" bg-orange-300 text-white rounded-lg p-2 mt-2"> Know More</button>
+              </div>
+          
+          
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slide1  text-center mt-5 p-5 ">
+              <div className="image h-60 w-60 ml-auto mr-auto ">
+                <img src=""  className="bg-yellow-500 ml-5 rounded-[50%] w-50  h-50" alt="" srcset="" />
+
+              </div>
+              <div className="description  text-gray-900">
+                <h1>Heading</h1>
+
+                <p className=" mt-5"> adipisicing elit. Eveniet, nihil? ipsum dolor sit amet consectetur adipisicing elit. Vitae, quas.</p>
+                <button className=" bg-yellow-300 text-white rounded-lg p-2 mt-2"> Know More</button>
+              </div>
+          
+          
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slide1  text-center mt-5 p-5 ">
+              <div className="image h-60 w-60 ml-auto mr-auto ">
+                <img src=""  className="bg-pink-500 ml-5 rounded-[50%] w-50  h-50" alt="" srcset="" />
+
+              </div>
+              <div className="description  text-gray-900">
+                <h1>Heading</h1>
+
+                <p className=" mt-5"> adipisicing elit. Eveniet, nihil? ipsum dolor sit amet consectetur adipisicing elit. Vitae, quas.</p>
+                <button className=" bg-green-300 text-white rounded-lg p-2 mt-2"> Know More</button>
+              </div>
+          
+          
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="slide1  text-center mt-5 p-5 ">
+              <div className="image h-60 w-60 ml-auto mr-auto ">
+                <img src=""  className="bg-red-500 ml-5 rounded-[50%] w-50  h-50" alt="" srcset="" />
+
+              </div>
+              <div className="description  text-gray-900">
+                <h1>Heading</h1>
+
+                <p className=" mt-5"> adipisicing elit. Eveniet, nihil? ipsum dolor sit amet consectetur adipisicing elit. Vitae, quas.</p>
+                <button className=" bg-blue-300 text-white rounded-lg p-2 mt-2"> Know More</button>
+              </div>
+          
+          
+          </div>
+        </SwiperSlide>
+       
       </Swiper>
       
       

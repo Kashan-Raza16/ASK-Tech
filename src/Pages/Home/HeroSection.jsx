@@ -78,12 +78,12 @@ const HeroSection = () => {
 
   return (
     <div className="Container h-screen w-full font-inter">
-      <div className="Home max-[400px]:hidden bg-gray-800 relative flex items-center justify-center h-full w-full">
+      <div className="Home  bg-gray-800 relative flex items-center justify-center h-full w-full">
        
         <div className="left-content absolute pl-20 left-10 top-40">
-         <h1 className='text-[4rem] font-extrabold font-sans  text-gray-900'>Elevate with ASK <br /> technology</h1>
+         <h1 className='text-[4rem] max-[400px]:text-[18px]  font-extrabold font-sans  text-gray-900'>Elevate with ASK <br /> technology</h1>
          {/* <h1 className='text-[2rem]  text-gray-900'>Welcome to ASK Technology Solution</h1> */}
-         <p className='text-[20px] text-gray-900 mt-7 max-w-[44%]'>
+         <p className='text-[20px]  text-gray-900 mt-7 max-w-[44%]'>
            — your premier partner in transforming bold ideas 
            into refined digital masterpieces. We specialize in bespoke web design,
            high-performance web development, and next-generation
