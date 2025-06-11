@@ -80,14 +80,16 @@ const HeroSection = () => {
     <div className="Container h-screen w-full font-inter">
       <div className="Home max-[400px]:hidden bg-gray-800 relative flex items-center justify-center h-full w-full">
        
-        <div className="left-content absolute pl-20 left-10 top-45">
-         <h1 className='text-[40px] font-extrabold font-sans  text-gray-900'>Elevate with ASK <br /> technology</h1>
-         <h1 className='text-[20px]  text-gray-900'>Welcome to <b>ASK Technology Solution</b></h1>
-         <p className='text-[15px] text-gray-900 mt-5'> <b> —your premier partner in transforming bold ideas <br />
-          into refined digital masterpieces. We specialize in bespoke web design,<br />
-         high-performance web development, and next-generation <br />
-          mobile applications for both iOS and Android platforms. </b></p>
-          <button className="bg-[#3325ae] text-white font-bold px-6 py-2 mt-2 rounded-lg hover:bg-blue-600 transition duration-300">
+        <div className="left-content absolute pl-20 left-10 top-40">
+         <h1 className='text-[4rem] font-extrabold font-sans  text-gray-900'>Elevate with ASK <br /> technology</h1>
+         {/* <h1 className='text-[2rem]  text-gray-900'>Welcome to ASK Technology Solution</h1> */}
+         <p className='text-[20px] text-gray-900 mt-7 max-w-[44%]'>
+           — your premier partner in transforming bold ideas 
+           into refined digital masterpieces. We specialize in bespoke web design,
+           high-performance web development, and next-generation
+           mobile applications for both iOS and Android platforms.
+         </p>
+          <button className="bg-[#3325ae] cursor-pointer text-white text-xl font-bold px-8 py-4 mt-10 rounded-lg hover:bg-blue-600 transition duration-300">
             Get Started
           </button>
         </div>
