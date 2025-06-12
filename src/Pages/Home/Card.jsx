@@ -22,7 +22,6 @@ const Card = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper h-screen pb-5 "
       >
-<<<<<<< HEAD
         <SwiperSlide>
           <div className="slide1  text-center mt-5 p-5 ">
               <div className="image h-60 w-60 ml-auto mr-auto ">
@@ -184,14 +183,6 @@ const Card = () => {
           </div>
         </SwiperSlide>
        
-=======
-        <SwiperSlide className="text-gray-800">slide1</SwiperSlide>
-        <SwiperSlide className="text-gray-800">Slide 2</SwiperSlide>
-        <SwiperSlide className="text-gray-800">Slide 3</SwiperSlide>
-        <SwiperSlide className="text-gray-800">Slide 4</SwiperSlide>
-        <SwiperSlide className="text-gray-800">Slide 5</SwiperSlide>
-        <SwiperSlide className="text-gray-800">Slide 6</SwiperSlide>
->>>>>>> b271047a6abd5814d2bc4403c1b1c055434bce66
       </Swiper>
     </div>
   );

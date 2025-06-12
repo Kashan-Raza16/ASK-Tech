@@ -1,5 +1,4 @@
 #app {
-<<<<<<< HEAD
     height: 100%;
   }
   html,
@@ -43,15 +42,7 @@
     display: flex;
     justify-content: center;
     /* align-items: center; */
-=======
-  height: 100%;
-}
-html,
-body {
-  position: relative;
-  height: 100%;
-}
->>>>>>> b271047a6abd5814d2bc4403c1b1c055434bce66
+  }
 
 body {
   /* background: #d8c2c2; */
@@ -89,25 +80,14 @@ body {
       rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
       background-color: #F9FAFB;
   }
-<<<<<<< HEAD
-/*   
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-  } */
-  
-=======
 }
 
-.swiper-slide img {
+/* .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
 
 
@@ -116,4 +96,3 @@ body {
     left: 0;
     width: 100%;
 }
->>>>>>> b271047a6abd5814d2bc4403c1b1c055434bce66
