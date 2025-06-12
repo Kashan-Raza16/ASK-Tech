@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../../component/Footer/Footer.jsx'
 import Header from '../../component/Header/Header.jsx'
 import HeroSection from './HeroSection.jsx'
 import HowWrok from './HowWrok.jsx'
@@ -13,6 +14,7 @@ const Home = () => {
       <ThinkMakeSolve />
       <Card />
       <HowWrok />
+      <Footer />
     </>
   )
 }
