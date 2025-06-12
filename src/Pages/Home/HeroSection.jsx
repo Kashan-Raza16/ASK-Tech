@@ -5,6 +5,7 @@ import ball from '../../assets/img/DarkOrange-ball.png';
 import PinkCube from '../../assets/img/new-pink-cube.png';
 import whiteCube from '../../assets/img/CUBE WHITE.png';
 
+
 // Register the ScrollTrigger plugin with GSAP
 gsap.registerPlugin(ScrollTrigger);
 
@@ -78,32 +79,32 @@ const HeroSection = () => {
 
   return (
     <div className="Container h-screen w-full font-inter">
-      <div className="Home  bg-gray-800 relative flex items-center justify-center h-full w-full">
-       
-        <div className="left-content absolute pl-20 left-10 top-40">
-         <h1 className='text-[4rem] max-[400px]:text-[18px]  font-extrabold font-sans  text-gray-900'>Elevate with ASK <br /> technology</h1>
+      <div className="   bg-gray-800 h-full w-full   overflow-hidden  ">
+          <div className="Home flex items-center justify-center absolute w-full h-full max-[450px]:w-[550px]  max-[450px]:h-full">
+        <div className="left-content absolute pl-20 max-[450px]:pl-5  top-40">
+         <h1 className='text-[4rem] max-[450px]:text-[32px]  font-extrabold font-sans  text-gray-900 '>Elevate with ASK <br /> technology</h1>
          {/* <h1 className='text-[2rem]  text-gray-900'>Welcome to ASK Technology Solution</h1> */}
-         <p className='text-[20px]  text-gray-900 mt-7 max-w-[44%]'>
+         <p className='text-[20px] max-[450px]:text-[12px]   text-gray-900 mt-7 max-w-[44%]'>
            — your premier partner in transforming bold ideas 
            into refined digital masterpieces. We specialize in bespoke web design,
            high-performance web development, and next-generation
            mobile applications for both iOS and Android platforms.
          </p>
-          <button className="bg-[#3325ae] cursor-pointer text-white text-xl font-bold px-8 py-4 mt-15 rounded-lg hover:bg-blue-600 transition duration-300">
+          <button className="bg-[#3325ae] cursor-pointer text-white text-xl font-bold px-8 py-4 mt-15 rounded-lg hover:bg-blue-600 transition duration-300 max-[450px]:w-35 max-[450px]:mt-3 max-[450px]:h-10 max-[450px]:text-[16px] max-[450px]:p-0 ">
             Get Started
           </button>
         </div>
 
         <div className="animation-container">
-          <img src={whiteCube} alt="" className="WhiteCube1 absolute top-43 right-100  w-35" />
-          <img src={whiteCube} alt="" className="WhiteCube2 absolute top-50 right-120 w-35" />
-          <img src={whiteCube} alt="" className="WhiteCube3 absolute top-50 right-80 w-35" />
-          <img src={PinkCube} alt="" className="WhiteCube4 absolute top-40 right-100 w-35" />
-          <img src={ball} alt="" className="ball absolute top-110 right-104 w-16" />
+          <img src={whiteCube} alt="" className="WhiteCube1 absolute top-[20%] right-[25.3%]  w-35 max-[450px]:w-15 max-[450px]:h-20 max-[450px]:top-55" />
+          <img src={whiteCube} alt="" className="WhiteCube2 absolute top-[30%] right-[31.3%] w-35 w-35 max-[450px]:w-15 max-[450px]:h-20 max-[450px]:top-60" />
+          <img src={whiteCube} alt="" className="WhiteCube3 absolute top-[30%] right-[19%] w-35 w-35 max-[450px]:w-15 max-[450px]:h-20 max-[450px]:top-60" />
+          <img src={PinkCube} alt="" className="WhiteCube4 absolute top-[20%] right-[25.3%] w-35  w-35 max-[450px]:w-15 max-[450px]:h-20 max-[450px]:top-45 " />
+          <img src={ball} alt="" className="ball absolute top-[60%] right-[27.5%] w-16 max-[450px]:w-10 max-[450px]:right-[26%]" />
         </div>
       </div>
 
-      
+      </div>
     </div>
   );
 };

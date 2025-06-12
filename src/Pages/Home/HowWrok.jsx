@@ -91,15 +91,15 @@ const HowWrok = () => {
   }, []);
 
   return (
-    <div className=" h-screen w-full flex page4  ">
-      <main className="relative bg-[#5A45CB] h-screen w-full  p-8 text-white font-sans overflow-hidden">
+    <div className=" h-screen w-full flex page4  max-[450px]:h-[800px] ">
+      <main className="relative bg-[#5A45CB] h-screen w-full  p-8 text-white font-sans max-[450px]:h-200 ">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-16">
           {/* Left Column: Text Content */}
-          <div className="relative z-10 w-full md:w-1/2 flex-shrink-0 pl-20 text-center md:text-left">
+          <div className="relative z-10 w-full md:w-1/2 flex-shrink-0  text-center md:text-left">
             <div className="flex items-center gap-3 mb-4 justify-center md:justify-start">
               <div className="w-8 h-px bg-white/70"></div>
               <p className="text-sm font-semibold tracking-[.2em]">
-                WHO I WORK WITH
+                WHO WE WORK WITH 
               </p>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6">
@@ -109,44 +109,31 @@ const HowWrok = () => {
               I research and create breakthrough - delightful ideas, leading
               visual designers.
             </p>
-            <div className="flex items-center justify-center md:justify-start gap-4">
-              <button
-                className="w-14 h-14 cursor-pointer bg-white rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-transform duration-300"
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-              >
-                <ScrollUpDownIcon />
-              </button>
-              {isHovered && (
-                <span className="text-sm font-medium text-white/90 sm:block">
-                  Scroll down
-                </span>
-              )}
-            </div>
+            
           </div>
 
           {/* Right Column: Floating 3D Shapes */}
-          <div className="FloatingCube relative w-full md:w-1/2 h-[30rem] md:h-[40rem] lg:h-[50rem] overflow-hidden">
+          <div className="FloatingCube relative w-full md:w-1/2 h-[20rem] md:h-[40rem] lg:h-[50rem]  max-[450px]:h-100">
             {/* Cubes using images */}
             <img
               src={whiteCube}
               alt="Floating-white-cube1"
-              className="Floating-white-cube1 absolute object-contain w-24 h-[0rem] md:w-32 md:h-[10rem] top-[30%] left-[10%] lg:left-[51%]"
+              className="Floating-white-cube1 absolute object-contain w-24 h-[10rem] md:w-32 md:h-[10rem] top-[30%] left-[10%] lg:left-[51%] max-[450px]:left-[35%] max-[450px]:top-[10%]"
             />
             <img
               src={pinkCube}
               alt="Floating-pink-cube"
-              className="Floating-pink-cube absolute object-contain w-24 h-[30rem] md:w-32 md:h-[10rem] top-[30%] right-[10%] lg:right-[30%]"
+              className="Floating-pink-cube absolute object-contain w-24 h-[10rem] md:w-32 md:h-[10rem] top-[30%] right-[10%] lg:right-[30%] max-[450px]:left-[35%] max-[450px]:top-[10%]"
             />
             <img
               src={whiteCube}
               alt="Floating-white-cube2"
-              className="Floating-white-cube2 z-5 absolute object-contain w-24 h-[30rem] md:w-32 md:h-[10rem] top-[30%] right-[10%] lg:right-[30%]"
+              className="Floating-white-cube2 z-5 absolute object-contain w-24 h-[10rem] md:w-32 md:h-[10rem] top-[30%] right-[10%] lg:right-[30%] max-[450px]:left-[35%] max-[450px]:top-[10%]"
             />
             <img
               src={purleCube}
               alt="Floating-purple-cube"
-              className="Floating-purple-cube z-1 absolute object-contain w-24 h-[30rem] md:w-32 md:h-[10rem] top-[30%] right-[10%] lg:right-[30%]"
+              className="Floating-purple-cube z-1 absolute object-contain w-24 h-[10rem] md:w-32 md:h-[10rem] top-[30%] right-[10%] lg:right-[30%] max-[450px]:left-[35%] max-[450px]:top-[10%]"
             />
 
             {/* Spheres using styled divs */}
@@ -166,6 +153,7 @@ const HowWrok = () => {
               style={{ animationDelay: "-2.5s" }}
               className="absolute rounded-full shadow-[0px_4px_10px_#808080] bg-white w-5 h-5 md:w-7 md:h-7 top-[70%] right-[70%]"
             ></div>
+            
           </div>
         </div>
       </main>

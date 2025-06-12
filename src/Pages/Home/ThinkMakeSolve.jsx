@@ -14,17 +14,17 @@ const ThinkMakeSolve = () => {
 
       {/* Content wrapper to constrain width and ensure proper stacking context */}
       {/* Removed max-w-5xl and adjusted padding to control left space */}
-      <div className="relative left-15 z-10 w-full px-4 sm:px-8 md:px-12 lg:px-16 text-left">
+      <div className="relative left-2 z-10 w-full px-4 sm:px-8 md:px-12 lg:px-16 text-left">
         {/* "What I Do" Section */}
         <div className="mb-10 md:mb-12">
           <div className="flex items-center space-x-3 mb-2">
             {/* Decorative line */}
             <div className="w-10 h-0.5 bg-indigo-600 rounded-full"></div>
-            <p className="text-sm md:text-base font-medium text-gray-700">What I Do</p>
+            <p className="text-sm md:text-base font-medium text-gray-700">What We Do</p>
           </div>
           {/* Main descriptive heading */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-gray-900 mt-4">
-            I enjoy creating delightful, <br className="hidden sm:inline"/> human-centered digital experiences.
+            we enjoy creating delightful, <br className="hidden sm:inline"/> human-centered digital experiences.
           </h1>
         </div>
 
@@ -37,7 +37,7 @@ const ThinkMakeSolve = () => {
 
         {/* "Contact Me" Button */}
         <div>
-          <button className="inline-flex items-center space-x-2 px-7 py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-lg rounded-xl shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+          <button className="inline-flex items-center space-x-2 px-7 py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-lg rounded-xl shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 max-[450px]:w-auto max-[450px]:h-10 max-[450px]:text-[16px]">
             <span>Contact Me</span>
             {/* SVG icon for the arrow */}
             <svg className="w-6 h-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

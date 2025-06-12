@@ -4,19 +4,23 @@
     --breakpoint-ls: 300px;
     --breakpoint-2xl: 100rem;
     --breakpoint-3xl: 120rem;
+    
 }
 
 
 
 .Home{
-
+    background-color: aliceblue;
     background-image: url(./assets/img/Home_3.jpg);
     background-size: 100%  100%  ;
     background-repeat: no-repeat;
+    position: relative;
     
-   
-   
+    
+    
 }
+
+
 
 
 @font-face {
@@ -27,9 +31,7 @@
     font-display: swap; /* Show fallback text while loading, then swap */
   }
 
-.batmfa{
-    font-family: batmfa;
-}
+
 
 @font-face {
     font-family: 'PP-Neue-Machina'; /* The name you'll use in your CSS */
@@ -47,7 +49,7 @@
    
   }
 
-.RobotoCondensed{
+/* .RobotoCondensed{
     font-family: PP-Neue-Machina;
-}
+} */
 

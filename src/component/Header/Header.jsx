@@ -34,7 +34,7 @@ const Header = () => {
         <button className="bg-white cursor-pointer text-black px-4 py-2 rounded-full font-medium hidden md:inline-block hover:bg-gray-300 transition-colors duration-200">Login</button>
 
         <button
-          className="md:hidden ml-2 cursor-pointer"
+          className="md:hidden ml-2 cursor-pointer text-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <X size={26} /> : <Menu size={26} />}

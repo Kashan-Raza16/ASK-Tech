@@ -30,10 +30,10 @@ const Footer = () => {
     "text-gray-500 hover:text-gray-900 transition-all duration-300 transform hover:scale-110 text-2xl";
 
   return (
-    <div className="h-screen flex-col z-10 mb-0 pb-0 bg-gray-200 text-gray-800 flex items-center justify-center p-4 sm:p-6 md:p-8">
+    <div className="h-screen max-[450px]:h-250  flex-col z-10 mb-0 pb-0 bg-gray-200 text-gray-800 flex items-center justify-center p-4 sm:p-6 md:p-8">
       {/* Animated Title */}
       <div className="ask-tech">
-        <h1 className="text-[15rem] md:text-[17rem] text-gray-700 font-[RobotoCondensed]">
+        <h1 className="text-[15rem] md:text-[17rem] text-gray-700 font-[RobotoCondensed]  max-[450px]:text-[50px]">
           ASK Tech
         </h1>
       </div>
@@ -43,8 +43,8 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="flex flex-col items-start md:w-1/3 lg:w-2/5">
             <div className="flex items-center mb-4">
-              <img src={Logo} className="text-gray-900 h-[2rem] w-[4rem] mr-2 text-3xl" />
-              <span className="text-4xl font-bold text-gray-900 font-[RobotoCondensed] ">ASK Tech</span>
+              <img src={Logo} className="text-gray-900 h-[2rem] w-[4rem] mr-2 text-3xl invert" />
+              <span className="text-4xl font-bold text-gray-900 font-[RobotoCondensed]  ">ASK Tech</span>
             </div>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
               ASK Tech empowers teams to transform raw data into clear,

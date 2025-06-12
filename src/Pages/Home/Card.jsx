@@ -78,7 +78,7 @@ const Card = () => {
         }}
         pagination={{
           clickable: true,
-          el: ".swiper-pagination", 
+          
         }}
         navigation={{
           nextEl: ".swiper-button-next",
