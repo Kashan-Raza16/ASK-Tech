@@ -109,7 +109,7 @@ const HowWrok = () => {
       <main className="relative bg-[#5A45CB] h-screen w-full  p-8 text-white font-sans overflow-hidden">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-16">
           {/* Left Column: Text Content */}
-          <div className="relative z-10 w-full md:w-1/2 flex-shrink-0 text-center md:text-left">
+          <div className="relative z-10 w-full md:w-1/2 flex-shrink-0 pl-20 text-center md:text-left">
             <div className="flex items-center gap-3 mb-4 justify-center md:justify-start">
               <div className="w-8 h-px bg-white/70"></div>
               <p className="text-sm font-semibold tracking-[.2em]">
