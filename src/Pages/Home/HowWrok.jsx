@@ -6,9 +6,6 @@ import whiteCube from "../../assets/img/cube.png";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-/**
- * Icon for the scroll down button.
- */
 const ScrollUpDownIcon = () => (
   <svg
     width="24"
@@ -37,72 +34,61 @@ const ScrollUpDownIcon = () => (
 
 const HowWrok = () => {
   const [isHovered, setIsHovered] = useState(false);
-  
 
   useEffect(() => {
     console.log("useEffect executed");
 
-    gsap.to('.Floating-pink-cube', {
+    gsap.to(".Floating-pink-cube", {
       y: -80,
       duration: 2,
-      ease: 'power1.inOut',
+      ease: "power1.inOut",
       scrollTrigger: {
-      scroller: "body",
-      trigger: '.Floating-pink-cube',
-      start: '50% 50%',
-      end: 'bottom bottom',
-      scrub: 2,
+        scroller: "body",
+        trigger: ".Floating-pink-cube",
+        start: "50% 50%",
+        end: "bottom bottom",
+        scrub: 2,
       },
     });
 
-    gsap.to('.Floating-white-cube1', {
+    gsap.to(".Floating-white-cube1", {
       y: 90,
       duration: 2,
-      ease: 'power1.inOut',
+      ease: "power1.inOut",
       scrollTrigger: {
-        trigger: '.Floating-white-cube1',
-        start: '60% 60%',
-        end: 'bottom bottom',
+        trigger: ".Floating-white-cube1",
+        start: "60% 60%",
+        end: "bottom bottom",
         scrub: 2,
       },
     });
 
-    gsap.to('.Floating-white-cube2', {
+    gsap.to(".Floating-white-cube2", {
       x: 130,
-      y:30,
+      y: 30,
       // y: 20,
       duration: 2,
-      ease: 'power1.inOut',
+      ease: "power1.inOut",
       scrollTrigger: {
-        trigger: '.Floating-white-cube2',
-        start: 'top 50%',
-        end: 'bottom bottom',
+        trigger: ".Floating-white-cube2",
+        start: "top 50%",
+        end: "bottom bottom",
         scrub: 2,
       },
     });
 
-    gsap.to('.Floating-purple-cube', {
+    gsap.to(".Floating-purple-cube", {
       x: -135,
       duration: 2,
-      ease: 'power1.inOut',
+      ease: "power1.inOut",
       scrollTrigger: {
-        trigger: '.Floating-purple-cube',
-        start: 'top 55%',
-        end: 'bottom bottom',
+        trigger: ".Floating-purple-cube",
+        start: "top 55%",
+        end: "bottom bottom",
         scrub: 2,
       },
     });
-
-
-
-    //===========================================================
-    
-
-    
-
   }, []);
-
-  
 
   return (
     <div className=" h-screen w-full flex page4  ">
@@ -184,7 +170,6 @@ const HowWrok = () => {
         </div>
       </main>
     </div>
-    
   );
 };
 

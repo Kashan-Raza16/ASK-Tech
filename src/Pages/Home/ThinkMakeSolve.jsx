@@ -2,9 +2,8 @@ import React from 'react'
 
 const ThinkMakeSolve = () => {
   return (
-     // Main container with a light background and content aligned to the start,
-    // min-height for full viewport, padding, and overflow-hidden for background elements.
-    <div className="relative min-h-screen bg-gray-50 flex flex-col items-start justify-center overflow-hidden font-inter">
+   
+    <div className="relative min-h-screen bg-gray-100 flex flex-col items-start justify-center overflow-hidden font-inter">
       {/* Absolute positioned background shapes to mimic the reference image */}
       {/* Large angled pinkish block */}
       <div className="absolute top-0 right-0 w-80 h-80 md:w-96 md:h-96 bg-purple-200 opacity-60 transform rotate-45 skew-x-12 -translate-y-1/3 translate-x-1/3 rounded-3xl shadow-xl"></div>
