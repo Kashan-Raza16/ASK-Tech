@@ -8,7 +8,7 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="navbar  fixed top-0 z-45  w-full text-gray-900 text-[18px] px-4 md:px-6 py-6 flex items-center justify-between">
+    <nav className="navbar  fixed top-0 z-45  w-full text-gray-700 text-[18px] px-4 md:px-6 py-6 flex items-center justify-between">
       
       <div className="flex items-center space-x-6 gap-20 md:space-x-10">
         {/* Logo */}

@@ -31,4 +31,13 @@
     font-family: batmfa;
 }
 
+@font-face {
+    font-family: 'PP-Neue-Machina'; /* The name you'll use in your CSS */
+    src: url('../src/assets/font/PP\ Neue\ Machina\ \ Medium.woff2') format('woff2'); /* Path to your font file */
+   
+  }
+
+.PP-Neue-Machina{
+    font-family: PP-Neue-Machina;
+}
 
