@@ -41,3 +41,13 @@
     font-family: PP-Neue-Machina;
 }
 
+@font-face {
+    font-family: 'RobotoCondensed'; /* The name you'll use in your CSS */
+    src: url('../src/assets/font/RobotoCondensed-VariableFont_wght.ttf') format('ttf'); /* Path to your font file */
+   
+  }
+
+.RobotoCondensed{
+    font-family: PP-Neue-Machina;
+}
+
