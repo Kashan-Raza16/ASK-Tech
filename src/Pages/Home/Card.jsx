@@ -120,7 +120,7 @@ const Card = () => {
                   {card.description}
                 </p>
                 {card.buttonText && (
-                  <button
+                  <button 
                     className={`${card.buttonColor} text-white cursor-pointer font-medium py-3 px-8 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 ${card.buttonColor.replace(
                       "bg",
                       "focus:ring"
@@ -143,7 +143,7 @@ const Card = () => {
           <span>02</span>
         </div>
         <div className="flex items-center space-x-4">
-          <button className="swiper-button-prev cursor-pointer p-3 rounded-full border border-gray-300 hover:border-gray-500 transition-colors duration-200 focus:outline-none">
+          <button name="prev-slide-button" title="Prev Button" className="swiper-button-prev cursor-pointer p-3 rounded-full border border-gray-300 hover:border-gray-500 transition-colors duration-200 focus:outline-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -159,7 +159,7 @@ const Card = () => {
               />
             </svg>
           </button>
-          <button className="swiper-button-next cursor-pointer p-3 rounded-full border border-gray-300 hover:border-gray-500 transition-colors duration-200 focus:outline-none">
+          <button name="next-slide-button" title="Next Button" className="swiper-button-next cursor-pointer p-3 rounded-full border border-gray-300 hover:border-gray-500 transition-colors duration-200 focus:outline-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

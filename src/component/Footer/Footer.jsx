@@ -43,7 +43,7 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="flex flex-col items-start md:w-1/3 lg:w-2/5">
             <div className="flex items-center mb-4">
-              <img src={Logo} className="text-gray-900 h-[2rem] w-[4rem] mr-2 text-3xl invert" />
+              <img src={Logo} alt="logo" className=" h-[2rem] w-[4rem] mr-2  invert" />
               <span className="text-4xl font-bold text-gray-900 font-[RobotoCondensed]  ">ASK Tech</span>
             </div>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">

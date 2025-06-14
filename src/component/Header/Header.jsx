@@ -13,8 +13,8 @@ const Header = () => {
       
       <div className="flex items-center space-x-6 gap-20 md:space-x-10">
         {/* Logo */}
-        <div className="w-20 h-20  rounded-full flex items-center justify-center text-black font-bold">
-          <img src={Logo} alt="" className='hover:scale-120  cursor-pointer transition-transform invert duration-300 ease-in-out  ' />
+        <div className="">
+          <img src={Logo} alt="" className='hover:scale-120  cursor-pointer transition-transform invert duration-300 ease-in-out h-15 w-20 ' />
         </div>
 
         {/* Nav Links (Hidden on mobile) */}
@@ -30,14 +30,16 @@ const Header = () => {
 
       <div className="flex items-center space-x-3 md:space-x-4">
         {/* <button className="bg-white cursor-pointer text-black px-4 py-2 rounded-full font-medium hidden md:inline-block hover:bg-gray-300 transition-transform duration-300 ease-in-out">Leden login</button> */}
-        <button className="w-10 h-10 bg-white cursor-pointer rounded-full border border-white flex items-center justify-center hover:scale-110 transition-transform duration-300 ease-in-out">
+        <button name='search-button' title='search' className="w-10 h-10 bg-white cursor-pointer rounded-full border border-white flex items-center justify-center hover:scale-110 transition-transform duration-300 ease-in-out">
           <Search size={22} />
         </button>
-        <button className="bg-white cursor-pointer text-black px-4 py-2 rounded-full font-medium hidden md:inline-block hover:bg-gray-300 transition-colors duration-200">Login</button>
+        <button name='Login-Button' className="bg-white cursor-pointer text-black px-4 py-2 rounded-full font-medium hidden md:inline-block hover:bg-gray-300 transition-colors duration-200">Login</button>
 
         <button
+          name='menu-button'
           className="md:hidden ml-2 cursor-pointer"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+
         >
           {mobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
         </button>
