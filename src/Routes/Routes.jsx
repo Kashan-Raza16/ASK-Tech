@@ -9,6 +9,8 @@ import About from "../Pages/About/About.jsx";
 import Service from "../Pages/Service/Service.jsx";
 import Product from "../Pages/Products/Products.jsx";
 import StudentSection from "../Pages/StudentSection/StudentHero.jsx";
+import { Projects } from "../Pages/Projects/Projects.jsx";
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,6 +20,14 @@ const router = createBrowserRouter(
       <Route path="Service" element={<Service />} />
       <Route path="Product" element={<Product />} />
       <Route path="student-section" element={<StudentSection />} />
+      <Route 
+      loader={() => {
+        // Simulating a data fetch for the student section
+        return { projectID: "12345" }; // Example project ID
+      }
+      }
+      path="project/:projectID" 
+      element={<Projects />} />
     </Route>
   )
 );
