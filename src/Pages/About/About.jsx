@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const About = () => {
   return (
-    <div>About</div>
-  )
-}
+    <div>
+      <p>
+        About us page is under construction. We are working hard to bring you
+      </p>
+    </div>
+  );
+};
 
-export default About
+export default About;

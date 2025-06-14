@@ -1,60 +1,48 @@
 @import "tailwindcss";
 
 @theme {
-    --breakpoint-ls: 300px;
-    --breakpoint-2xl: 100rem;
-    --breakpoint-3xl: 120rem;
-    
+  --breakpoint-ls: 300px;
+  --breakpoint-2xl: 100rem;
+  --breakpoint-3xl: 120rem;
 }
 
-
-
-.Home{
-    background-color: aliceblue;
-    background-image: url(./assets/img/Home_3.jpg);
-    background-size: 100%  100%  ;
-    background-repeat: no-repeat;
-    position: relative;
-    
-    
-    
+.Home {
+  background-color: aliceblue;
+  background-image: url(./assets/img/Home_3.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
 }
-@media screen and (max-width:400px) {
-        .Home{
-          background-image: url(./assets/img/Home_4.jpg);
-        }
-}
-
-
-
-
-@font-face {
-    font-family: 'batmfa'; /* The name you'll use in your CSS */
-    src: url('./assets/font/batmfa.ttf') format('woff2'); /* Path to your font file */
-    font-weight: 400; /* This file is for the regular weight */
-    font-style: normal;
-    font-display: swap; /* Show fallback text while loading, then swap */
+@media screen and (max-width: 400px) {
+  .Home {
+    background-image: url(./assets/img/Home_4.jpg);
   }
-
-
-
-@font-face {
-    font-family: 'PP-Neue-Machina'; /* The name you'll use in your CSS */
-    src: url('../src/assets/font/PP\ Neue\ Machina\ \ Medium.woff2') format('woff2'); /* Path to your font file */
-   
-  }
-
-.PP-Neue-Machina{
-    font-family: PP-Neue-Machina;
 }
 
 @font-face {
-    font-family: 'RobotoCondensed'; /* The name you'll use in your CSS */
-    src: url('../src/assets/font/RobotoCondensed-VariableFont_wght.ttf') format('ttf'); /* Path to your font file */
-   
-  }
+  font-family: "batmfa"; /* The name you'll use in your CSS */
+  src: url("./assets/font/batmfa.ttf") format("woff2"); /* Path to your font file */
+  font-weight: 400; /* This file is for the regular weight */
+  font-style: normal;
+  font-display: swap; /* Show fallback text while loading, then swap */
+}
 
-/* .RobotoCondensed{
-    font-family: PP-Neue-Machina;
-} */
+@font-face {
+  font-family: "PP-Neue-Machina"; /* The name you'll use in your CSS */
+  src: url("../src/assets/font/PP\ Neue\ Machina\ \ Medium.woff2")
+    format("woff2"); /* Path to your font file */
+}
 
+.PP-Neue-Machina {
+  font-family: PP-Neue-Machina;
+}
+
+@font-face {
+  font-family: "RobotoCondensed"; /* The name you'll use in your CSS */
+  src: url("../src/assets/font/RobotoCondensed-VariableFont_wght.ttf")
+    format("ttf"); /* Path to your font file */
+}
+
+.RobotoCondensed {
+  font-family: PP-Neue-Machina;
+}

@@ -9,12 +9,10 @@ import Card from './Card.jsx'
 const Home = () => {
   return (
     <>
-      <Header />
       <HeroSection />
       <ThinkMakeSolve />
       <Card />
       <HowWrok />
-      <Footer />
     </>
   )
 }

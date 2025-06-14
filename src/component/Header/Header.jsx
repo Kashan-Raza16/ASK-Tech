@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Search, Menu, X } from 'lucide-react';
 import Logo from "../../assets/img/ask logo.png"
+import { Link } from 'react-router-dom';
 // import Logo from "../../assets/img/logo-min.png"
 
 
@@ -18,11 +19,12 @@ const Header = () => {
 
         {/* Nav Links (Hidden on mobile) */}
         <ul className={`flex-col md:flex-row absolute md:static top-16 left-0 w-full md:w-auto bg-[#1c2431] md:bg-transparent px-6 md:px-0 md:flex space-y-2 md:space-y-0 md:space-x-6 font-semibold text-md transition-all duration-300 ${mobileMenuOpen ? 'flex' : 'hidden'}`}>
-          <li className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Home</li>
-          <li className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Service</li>
-          <li className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Product's</li>
+          <Link to='/' className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Home</Link>
+          <Link to='/Service' className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Service</Link>
+          <Link to='/Product' className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Product's</Link>
           {/* <li className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Contact</li> */}
-          <li className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">About</li>
+          <Link to='/About' className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">About</Link>
+          <Link to='/student-section' className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Student Section</Link>
         </ul>
       </div>
 
