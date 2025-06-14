@@ -7,9 +7,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // Import images
-import userInterfaceImage from "../../assets/img/ask logo.png"; 
-import userExperienceImage from "../../assets/img/userExperienceImage.jpg"; 
-import uiDesignKitImage from "../../assets/img/ask logo.png"; 
+import userInterfaceImage from "../../assets/img/ui1.png"; 
+import userExperienceImage from "../../assets/img/UX1.png"; 
+import uiDesignKitImage from "../../assets/img/uidesign.png"; 
+import anotherui from "../../assets/img/anotherui.png"; 
+import enhance from "../../assets/img/enhance.png"; 
 
 const Card = () => {
   const cardData = [
@@ -46,7 +48,7 @@ const Card = () => {
 
     {
       id: 4,
-      image: userInterfaceImage,
+      image: anotherui,
       title: "Another Interface",
       description:
         "Another set of templates available for various project management needs. Explore now!",
@@ -56,7 +58,7 @@ const Card = () => {
     },
     {
       id: 5,
-      image: userExperienceImage,
+      image: enhance,
       title: "Enhanced Experience",
       description:
         "Discover tools to enhance user satisfaction and streamline your project workflows effectively.",
