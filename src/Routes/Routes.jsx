@@ -1,0 +1,25 @@
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+} from "react-router-dom";
+import Home from "../Pages/Home/Home.jsx";
+import Layout from "../Layout.jsx";
+import About from "../Pages/About/About.jsx";
+import Service from "../Pages/Service/Service.jsx";
+import Product from "../Pages/Products/Products.jsx";
+import StudentSection from "../Pages/StudentSection/StudentHero.jsx";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Layout />}>
+      <Route index element={<Home />} />
+      <Route path="About" element={<About />} />
+      <Route path="Service" element={<Service />} />
+      <Route path="Product" element={<Product />} />
+      <Route path="student-section" element={<StudentSection />} />
+    </Route>
+  )
+);
+
+export default router;
