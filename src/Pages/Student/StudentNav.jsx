@@ -13,25 +13,24 @@ const StudentNav = () => {
     { name: "FAQ", href: "#faq" },
   ];
 
+  //bg-[#fdf6ee]
+
   return (
-    <div className="flex justify-center items-center min-h-[80px] bg-[#fdf6ee]">
-      <nav className="p-4 shadow-md mt-10  rounded-lg w-full max-w-4xl">
+    <div className="flex justify-center items-center min-h-[80px] bg-[#fdf6ee] ">
+      <nav className="p-4 shadow-md mt-10  rounded-lg w-full max-w-4xl bg-[rgb(239,236,232)] ">
         <div className="flex items-center justify-between">
           {/* Logo Section */}
-          <div className="flex-shrink-0">
-            {/* Using a placeholder for the logo as an SVG or image URL wasn't provided. */}
-            {/* Replace this with your actual logo (e.g., <img src="your-logo.svg" alt="Jam Logo" />) */}
+          <div className="flex-shrink-0 ">
             <a
               href="#"
               className="text-4xl font-bold text-indigo-800 tracking-tight"
             >
-              <img src={Logo} alt=""
-              className="h-15 w-20" />
+              <img src={Logo} alt="" className="h-15 w-20" />
             </a>
           </div>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-8 ">
             {navLinks.map((link) => (
               <a
                 key={link.name}
