@@ -8,8 +8,8 @@ import Layout from "../Layout.jsx";
 import About from "../Pages/About/About.jsx";
 import Service from "../Pages/Service/Service.jsx";
 import Product from "../Pages/Products/Products.jsx";
-import StudentSection from "../Pages/StudentSection/StudentHero.jsx";
-import { Projects } from "../Pages/Projects/Projects.jsx";
+import Projects from "../Pages/Projects/Projects.jsx";
+import StudentSection from "../Pages/StudentSection/StudentSection.jsx";
 
 
 const router = createBrowserRouter(
