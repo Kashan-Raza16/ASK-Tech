@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { Search, Menu, X } from "lucide-react";
 import Logo from "../../assets/img/ask logo.png";
 import { Link, useLocation } from "react-router-dom";
-// import Logo from "../../assets/img/logo-min.png"
 
 const Header = () => {
   const location = useLocation();
-
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  // Hide navbar on /student-section
+  if (location.pathname === "/student-section") return null;
 
   return (
     <nav
@@ -17,11 +18,11 @@ const Header = () => {
     >
       <div className="flex items-center space-x-6 gap-20 md:space-x-10">
         {/* Logo */}
-        <div className="">
+        <div>
           <img
             src={Logo}
-            alt=""
-            className="hover:scale-120  cursor-pointer transition-transform invert duration-300 ease-in-out h-15 w-20 "
+            alt="ASK Tech Logo"
+            className="hover:scale-120 cursor-pointer transition-transform invert duration-300 ease-in-out h-15 w-20"
           />
         </div>
 
@@ -50,18 +51,8 @@ const Header = () => {
             Product's
           </Link>
           {/* <li className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Contact</li> */}
-          <Link
-            to="/About"
-            className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200"
-          >
-            About
-          </Link>
-          <Link
-            to="/student-section"
-            className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200"
-          >
-            Student Section
-          </Link>
+          <Link to="/About" className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">About</Link>
+          <Link to="/student-section" className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Student Section</Link>
         </ul>
       </div>
 
