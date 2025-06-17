@@ -33,7 +33,7 @@ const Footer = () => {
     <div className="h-screen max-[450px]:h-250  flex-col z-10 mb-0 pb-0 bg-gray-200 text-gray-800 flex items-center justify-center p-4 sm:p-6 md:p-8">
       {/* Animated Title */}
       <div className="ask-tech">
-        <h1 className="text-[15rem] md:text-[17rem] text-gray-700 font-[RobotoCondensed]  max-[450px]:text-[50px]">
+        <h1 className="text-[15rem] md:text-[17rem] text-gray-700 font-[RobotoCondensed]  max-[450px]:text-[50px] max-[800px]:text-[50px]">
           ASK Tech
         </h1>
       </div>

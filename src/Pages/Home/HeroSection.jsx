@@ -81,17 +81,16 @@ const HeroSection = () => {
   return (
     <div className="Container h-screen w-full font-inter">
       <div className="   bg-gray-800 h-full w-full   overflow-hidden  ">
-          <div className={`Home flex items-center justify-center absolute w-full h-full max-[450px]:w-full  max-[450px]:h-full `}>
-        <div className="left-content absolute pl-20 max-[450px]:pl-5  top-40 max-[450px]:top-32">
-         <h1  className='text-[4rem] max-[450px]:text-[32px] max-[450px]:leading-8 font-extrabold font-sans  text-gray-900  '>Elevate with ASK <br /> Technology</h1>
+     <div className={`Home flex items-center justify-center absolute w-full h-full max-[450px]:w-full  max-[450px]:h-full `}>
+        <div className="left-20 max-[450px]:left-2 absolute z-10 max-[450px]:pl-5  top-40 max-[450px]:top-42">
+         <h1  className='text-[4rem] max-[450px]:text-[32px] max-[450px]:leading-8 font-extrabold font-sans  text-gray-900  '>Elevate with ASK </h1>
+         <h2 className="text-[3rem] max-[450px]:text-[32px] font-bold"> Technology</h2>
          {/* <h1 className='text-[2rem]  text-gray-900'>Welcome to ASK Technology Solution</h1> */}
-         <p className='text-[20px] max-[450px]:text-[14px]  relative z-50 font-bold max-[450px]:mt-2  text-gray-600 mt-7 max-w-[40%] max-[450px]:max-w-[80%]'>
+         <p className='text-[20px] max-[450px]:text-[14px]  relative z-50 font-bold max-[450px]:mt-2  text-gray-600 mt-7 max-w-[50%] max-[450px]:max-w-[80%]'>
            — your premier partner in transforming bold ideas 
-           into refined digital masterpieces. We specialize in bespoke web design,
-           high-performance web development, and next-generation
-           mobile applications for both iOS and Android platforms.
+           into refined digital masterpieces. 
          </p>
-          <button className="bg-[#3325ae] cursor-pointer text-white text-xl font-bold px-8 py-4 mt-5 rounded-lg hover:bg-blue-600 transition duration-300 max-[450px]:w-35 max-[450px]:mt-3 max-[450px]:h-10 max-[450px]:text-[16px] max-[450px]:p-0 ">
+          <button className="bg-[#3325ae] cursor-pointer text-white text-xl font-bold px-4 py-2 mt-5 rounded-lg hover:bg-blue-600 transition  duration-300 max-[450px]:w-35 max-[450px]:mt-3 max-[450px]:h-10 max-[450px]:text-[16px] max-[450px]:p-0 ">
             Get Started
           </button>
         </div>
