@@ -1,50 +1,94 @@
-import React, { useState } from 'react';
-import { Search, Menu, X } from 'lucide-react';
-import Logo from "../../assets/img/ask logo.png"
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Search, Menu, X } from "lucide-react";
+import Logo from "../../assets/img/ask logo.png";
+import { Link, useLocation } from "react-router-dom";
 // import Logo from "../../assets/img/logo-min.png"
 
-
 const Header = () => {
+  const location = useLocation();
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="navbar  fixed top-0 z-45  w-full text-gray-700 text-[18px] px-4 md:px-6 py-6 flex items-center justify-between">
-      
+    <nav
+      className={`navbar  fixed top-0 z-45  w-full text-gray-700 text-[18px] px-4 md:px-6 py-6 flex items-center justify-between ${
+        location.pathname === "/student-section" ? "hidden" : null
+      } `}
+    >
       <div className="flex items-center space-x-6 gap-20 md:space-x-10">
         {/* Logo */}
         <div className="">
-          <img src={Logo} alt="" className='hover:scale-120  cursor-pointer transition-transform invert duration-300 ease-in-out h-15 w-20 ' />
+          <img
+            src={Logo}
+            alt=""
+            className="hover:scale-120  cursor-pointer transition-transform invert duration-300 ease-in-out h-15 w-20 "
+          />
         </div>
 
         {/* Nav Links (Hidden on mobile) */}
-        <ul className={`flex-col md:flex-row absolute md:static top-16 left-0 w-full md:w-auto bg-[#1c2431] md:bg-transparent px-6 md:px-0 md:flex space-y-2 md:space-y-0 md:space-x-6 font-semibold text-md transition-all duration-300 ${mobileMenuOpen ? 'flex' : 'hidden'}`}>
-          <Link to='/' className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Home</Link>
-          <Link to='/Service' className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Service</Link>
-          <Link to='/Product' className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Product's</Link>
+        <ul
+          className={`flex-col md:flex-row absolute md:static top-16 left-0 w-full md:w-auto bg-[#1c2431] md:bg-transparent px-6 md:px-0 md:flex space-y-2 md:space-y-0 md:space-x-6 font-semibold text-md transition-all duration-300 ${
+            mobileMenuOpen ? "flex" : "hidden"
+          }`}
+        >
+          <Link
+            to="/"
+            className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200"
+          >
+            Home
+          </Link>
+          <Link
+            to="/Service"
+            className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200"
+          >
+            Service
+          </Link>
+          <Link
+            to="/Product"
+            className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200"
+          >
+            Product's
+          </Link>
           {/* <li className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Contact</li> */}
-          <Link to='/About' className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">About</Link>
-          <Link to='/student-section' className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Student Section</Link>
+          <Link
+            to="/About"
+            className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200"
+          >
+            About
+          </Link>
+          <Link
+            to="/student-section"
+            className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200"
+          >
+            Student Section
+          </Link>
         </ul>
       </div>
 
       <div className="flex items-center space-x-3 md:space-x-4">
         {/* <button className="bg-white cursor-pointer text-black px-4 py-2 rounded-full font-medium hidden md:inline-block hover:bg-gray-300 transition-transform duration-300 ease-in-out">Leden login</button> */}
-        <button name='search-button' title='search' className="w-10 h-10 bg-white cursor-pointer rounded-full border border-white flex items-center justify-center hover:scale-110 transition-transform duration-300 ease-in-out">
+        <button
+          name="search-button"
+          title="search"
+          className="w-10 h-10 bg-white cursor-pointer rounded-full border border-white flex items-center justify-center hover:scale-110 transition-transform duration-300 ease-in-out"
+        >
           <Search size={22} />
         </button>
-        <button name='Login-Button' className="bg-white cursor-pointer text-black px-4 py-2 rounded-full font-medium hidden md:inline-block hover:bg-gray-300 transition-colors duration-200">Login</button>
+        <button
+          name="Login-Button"
+          className="bg-white cursor-pointer text-black px-4 py-2 rounded-full font-medium hidden md:inline-block hover:bg-gray-300 transition-colors duration-200"
+        >
+          Login
+        </button>
 
         <button
-          name='menu-button'
+          name="menu-button"
           className="md:hidden ml-2 cursor-pointer"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-
         >
           {mobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
         </button>
       </div>
-
     </nav>
   );
 };

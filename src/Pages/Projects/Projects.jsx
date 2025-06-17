@@ -1,15 +1,12 @@
 import React from 'react'
 import { useLoaderData } from 'react-router-dom'
 
-
-export const Projects = () => {
+const Projects = () => {
   return (
-    <div>
+ <div>
         <h1>Projects Page</h1>
         <h1>project {}</h1>
-    </div>
-  )
+    </div>  )
 }
 
-
-r
+export default Projects

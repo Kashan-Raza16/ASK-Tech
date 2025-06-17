@@ -9,7 +9,7 @@ import About from "../Pages/About/About.jsx";
 import Service from "../Pages/Service/Service.jsx";
 import Product from "../Pages/Products/Products.jsx";
 import Projects from "../Pages/Projects/Projects.jsx";
-import StudentSection from "../Pages/StudentSection/StudentSection.jsx";
+import StudentSection from "../Pages/Student/index.jsx";
 
 
 const router = createBrowserRouter(
