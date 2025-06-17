@@ -47,3 +47,66 @@
 .RobotoCondensed {
   font-family: PP-Neue-Machina;
 }
+
+
+
+/* ============================== scroll effect================================== */
+.marquee-container {
+  width: 100%;
+  /* Limit width for better appearance */
+  overflow: hidden; /* Crucial: Hides content outside the container */
+  white-space: nowrap; /* Prevents text from wrapping */
+  display: flex; /* Use flexbox to align content blocks side-by-side */
+  border-radius: 8px;
+  padding: 10px 0;
+  position: relative; /* Needed for pause on hover pseudo-element */
+}
+
+/* Content Wrapper for each set of items */
+.marquee-content {
+  display: flex; /* Use flexbox for items within each content block */
+  align-items: center;
+  justify-content: space-around; /* Distribute items with space */
+  gap: 30px; /* Space between individual items */
+  padding: 0 15px; /* Padding for items at the start/end of the block */
+
+  /* Animation properties */
+  animation: scroll 40s linear infinite; /* Adjust duration for speed */
+}
+
+/* Individual Marquee Items (text) */
+.marquee-content span {
+  display: inline-block; /* Treat spans as blocks for consistent spacing */
+  flex-shrink: 0; /* Prevent items from shrinking */
+  padding: 8px 1px;
+  font-weight: 700;
+  
+  border-radius: 5px;
+  font-size: 1.2em;
+  color: rgb(53, 53, 53);
+}
+/* Pause on Hover */
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+.pause:hover .swiper-slide{
+  animation-play-state: paused;
+}
+
+/* Keyframe for normal scroll (leftwards) */
+@keyframes scroll {
+ 0% {
+    transform: translateX(0);
+  }
+
+  
+  100% {
+    /* Adjust this value based on the total width of your phrases to create a seamless loop.
+       You might need to duplicate the phrases in HTML to achieve a true continuous scroll.
+       For a back-and-forth, consider a different approach (like the previous marquee).
+       For now, let's assume a continuous left scroll. */
+    transform: translateX(-50%); /* If you duplicate content in JS, this might be -50% */
+  }
+
+}
