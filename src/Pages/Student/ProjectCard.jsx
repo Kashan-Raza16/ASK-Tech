@@ -187,7 +187,7 @@ const ProjectCard = () => {
     <div className="min-h-screen bg-gray-50 font-sans text-gray-900 flex flex-col">
       <Header />
       <main className="container mx-auto p-8 flex-grow">
-        <h2 className="text-2xl font-bold mb-6 text-gray-800">Featured Bitcoin Projects</h2>
+        <h2 className="text-2xl font-bold mb-6 text-gray-800">Most Popular Projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, idx) => (
             <ShotCard key={idx} {...project} />

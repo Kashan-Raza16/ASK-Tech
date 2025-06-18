@@ -44,7 +44,7 @@ const Header = () => {
           >
             Service
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to="/Product"
             className={({ isActive }) =>
               `cursor-pointer border-b-[3px] border-transparent pb-1 transition-all duration-200 ${
@@ -53,7 +53,7 @@ const Header = () => {
             }
           >
             Product's
-          </NavLink>
+          </NavLink> */}
           <NavLink
             to="/About"
             className={({ isActive }) =>
