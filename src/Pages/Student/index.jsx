@@ -3,7 +3,7 @@ import StudentNav from "./StudentNav";
 import StudentHero from "./StudentHero";
 import DeliciouslySimpleSection from "./DeliciouslySimpleSection";
 import ProjectCard from "./ProjectCard";
-import FandQ from "../../../F&Q";
+import FandQ from "./F&Q";
 import Call from "./Call";
 
 const index = () => {
