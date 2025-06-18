@@ -42,8 +42,8 @@ const Card = () => {
       description:
         "We have got quite a few already made templates for better project management that you can use now.",
       buttonText: "Find out more",
-      bgColor: "bg-pink-100", // Corresponds to the image background
-      buttonColor: "bg-pink-500", // Example button color, can be adjusted
+      bgColor: "bg-pink-100", 
+      buttonColor: "bg-pink-500", 
     },
 
     {

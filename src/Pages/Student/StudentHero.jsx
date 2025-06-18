@@ -4,7 +4,7 @@ import YellowToastIllustration from '../../assets/img/UX1.png'; // Make sure to 
 
 const StudentHero= () => {
   return (
-   <section className="bg-[#fdf6ee] min-h-[90vh] flex items-center justify-center">
+   <section className="bg-[#fdf6ee] min-h-[90vh] pt-45 flex items-center justify-center">
       <div className="max-w-6xl mx-auto text-center flex flex-col items-center">
         {/* Top Text */}
         <h1 className="text-5xl md:text-8xl font-extrabold text-[#1e1b2e] leading-tight">
