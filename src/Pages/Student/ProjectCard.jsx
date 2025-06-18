@@ -87,8 +87,9 @@ const ShotCard = React.memo(({ title, imageUrl, likes, comments }) => (
             />
           </svg>
           {likes}
+          {/* Save button  SAVE SVG*/}
           <button
-            className="ml-2 bg-white rounded-full p-1 shadow hover:bg-gray-100 transition"
+            className="ml-2 p-1 cursor-pointer hover:bg-gray-200 transition"
             aria-label="Save project"
             type="button"
           >

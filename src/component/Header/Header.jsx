@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Search, Menu, X } from "lucide-react";
 import Logo from "../../assets/img/ask logo.png";
-import { Link, useLocation } from "react-router-dom";
+import {NavLink, useLocation } from "react-router-dom";
 
 const Header = () => {
   const location = useLocation();
@@ -24,11 +24,56 @@ const Header = () => {
 
         {/* Nav Links (Hidden on mobile) */}
         <ul className={`flex-col max-[450px]:text-white max-[450px]:pt-15 max-[450px]:rounded-lg max-[450px]:w-[50%] max-[450px]:top-0 max-[450px]:h-screen md:flex-row absolute z-50 md:static top-16 left-0 w-full md:w-auto bg-[#3325ae] md:bg-transparent px-6 md:px-0 md:flex space-y-2 md:space-y-0 md:space-x-10 font-semibold text-md transition-all duration-800 ${mobileMenuOpen ? 'flex' : 'hidden'}`}>
-          <Link to='/' className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Home</Link>
-          <Link to='/Service' className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Service</Link>
-          <Link to='/Product' className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Product's</Link>
-          <Link to="/About" className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">About</Link>
-          <Link to="/student-section" className="cursor-pointer border-b-[3px] hover:scale-120 border-transparent pb-1 transition-all duration-200">Student Section</Link>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `cursor-pointer border-b-[3px] border-transparent pb-1 transition-all duration-200 ${
+                isActive ? "text-[#ff4dad] border-[#ff4dad] scale-105" : "hover:scale-110"
+              }`
+            }
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/Service"
+            className={({ isActive }) =>
+              `cursor-pointer border-b-[3px] border-transparent pb-1 transition-all duration-200 ${
+                isActive ? "text-[#ff4dad] border-[#ff4dad] scale-105" : "hover:scale-110"
+              }`
+            }
+          >
+            Service
+          </NavLink>
+          <NavLink
+            to="/Product"
+            className={({ isActive }) =>
+              `cursor-pointer border-b-[3px] border-transparent pb-1 transition-all duration-200 ${
+                isActive ? "text-[#ff4dad] border-[#ff4dad] scale-105" : "hover:scale-110"
+              }`
+            }
+          >
+            Product's
+          </NavLink>
+          <NavLink
+            to="/About"
+            className={({ isActive }) =>
+              `cursor-pointer border-b-[3px] border-transparent pb-1 transition-all duration-200 ${
+                isActive ? "text-[#ff4dad] border-[#ff4dad] scale-105" : "hover:scale-110"
+              }`
+            }
+          >
+            About
+          </NavLink>
+          <NavLink
+            to="/student-section"
+            className={({ isActive }) =>
+              `cursor-pointer border-b-[3px] border-transparent pb-1 transition-all duration-200 ${
+                isActive ? "text-[#ff4dad] border-[#ff4dad] scale-105" : "hover:scale-110"
+              }`
+            }
+          >
+            Student Section
+          </NavLink>
         </ul>
       </div>
 
