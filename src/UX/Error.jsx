@@ -25,7 +25,7 @@ const Error = ({ code, title, message }) => {
         <p className="text-gray-500 mb-6 text-center">{errorMessage}</p>
         <button
           onClick={() => navigate("/")}
-          className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-200 text-lg"
+          className="bg-pink-500 cursor-pointer hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-200 text-lg"
         >
           Go Home
         </button>
