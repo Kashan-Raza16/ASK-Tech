@@ -7,11 +7,9 @@ import Home from "../Pages/Home/Home.jsx";
 import Layout from "../Layout.jsx";
 import About from "../Pages/About/About.jsx";
 import Service from "../Pages/Service/index.jsx";
-// import Product from "../Pages/Products/Products.jsx";
-// import Projects from "../Pages/Projects/Projects.jsx";
 import StudentSection from "../Pages/Student/index.jsx";
 import ProjectCard from "../Pages/Student/ProjectCard";
-import ProjectDetail from "../Pages/Student/ProjectDetail"; // You need to create this
+import ProjectDetail from "../Pages/Projects/ProjectDetail.jsx";
 
 
 const router = createBrowserRouter(

@@ -65,7 +65,7 @@ const FandQ = () => {
                 onClick={() => toggleOpen(index)}
                 aria-expanded={openStates[index]}
               >
-                <span className="text-2xl sm:text-3xl font-semibold text-[#222]">
+                <span className="text-2xl cursor-pointer sm:text-3xl font-semibold text-[#222]">
                   {faq.question}
                 </span>
                 <svg

@@ -1,8 +1,8 @@
-import { useParams, useNavigate } from "react-router-dom";
+import Error from "../../UX/Error"; 
 import { useEffect, useState } from "react";
-import { fetchProjectData } from "./ProjectCard";
-import Error from "../../UX/Error"; // Import Error component
 import LoadingSpinner from "../../UX/LoadingSpinner";
+import { useParams, useNavigate } from "react-router-dom";
+import { fetchProjectData } from "../Projects/ProjectData";
 
 const ProjectDetail = () => {
   const { id } = useParams();
@@ -54,7 +54,7 @@ const ProjectDetail = () => {
         <img
           src={project.imageUrl}
           alt={project.title}
-          className="w-full h-100 object-cover rounded-xl mb-6 shadow"
+          className="w-full h-80 object-cover rounded-xl mb-6 shadow"
         />
         <h1 className="text-3xl font-extrabold text-gray-900 mb-2">{project.title}
         </h1>
