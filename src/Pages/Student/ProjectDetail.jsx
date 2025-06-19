@@ -2,6 +2,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { fetchProjectData } from "./ProjectCard";
 import Error from "../../UX/Error"; // Import Error component
+import LoadingSpinner from "../../UX/LoadingSpinner";
 
 const ProjectDetail = () => {
   const { id } = useParams();
@@ -19,9 +20,7 @@ const ProjectDetail = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-[#F8F7FC]">
-        <div className="text-xl font-semibold text-gray-500">Loading...</div>
-      </div>
+      <LoadingSpinner />
     );
   }
 
@@ -50,14 +49,15 @@ const ProjectDetail = () => {
   }
 
   return (
-    <div className="min-h-screen bg-[#F8F7FC] flex items-center justify-center py-10 px-4">
+    <div className="min-h-screen bg-[#F8F7FC] flex items-center justify-center py-20 px-4">
       <div className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full p-8">
         <img
           src={project.imageUrl}
           alt={project.title}
-          className="w-full h-64 object-cover rounded-xl mb-6 shadow"
+          className="w-full h-100 object-cover rounded-xl mb-6 shadow"
         />
-        <h1 className="text-3xl font-extrabold text-gray-900 mb-2">{project.title}</h1>
+        <h1 className="text-3xl font-extrabold text-gray-900 mb-2">{project.title}
+        </h1>
         <div className="flex items-center gap-6 mb-4">
           <span className="flex items-center text-pink-600 font-semibold">
             <svg className="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20">

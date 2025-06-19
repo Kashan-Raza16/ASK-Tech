@@ -8,7 +8,7 @@ const StudentHero= () => {
       <div className="max-w-6xl mx-auto text-center flex flex-col items-center">
         {/* Top Text */}
         <h1 className="text-5xl md:text-8xl font-extrabold text-[#1e1b2e] leading-tight">
-          A sweet, secret design <br className="hidden md:block" />
+          A sweet, secret Project <br className="hidden md:block" />
           ingredient
         </h1>
 

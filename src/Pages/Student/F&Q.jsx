@@ -7,7 +7,7 @@ const FandQ = () => {
     {
       question: 'How is ASK Tech different from other subscription services?',
       answer:
-        'When you work with Jamm, you work with top-notch individuals not just a single person. We put in the right expert to manage your account and to deliver the task/project at hand (branding, website, product, etc). Quality control, skill and process is our secret sauce.',
+        'When you work with Jamm, you work with top-notch individuals not just a single person. We put in the right expert to manage your account and to deliver the project at hand (branding, website, product, etc). Quality control, skill and process is our secret sauce.',
     },
     {
       question: 'How much work is delivered on every update?',
