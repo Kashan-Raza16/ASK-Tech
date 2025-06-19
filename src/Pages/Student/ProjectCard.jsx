@@ -238,7 +238,7 @@ const ProjectCard = () => {
         {visibleCount < allProjects.length && (
           <div className="flex justify-center mt-10">
             <button
-              className="px-8 py-3 bg-slate-600 cursor-pointer text-white font-bold rounded-lg shadow hover:bg-slate-800 transition-all duration-200 flex items-center gap-2"
+              className="px-8 py-3 bg-blue-600 cursor-pointer text-white font-bold rounded-lg shadow hover:bg-blue-800 transition-all duration-200 flex items-center gap-2"
               style={{ minWidth: 160 }}
               onClick={handleLoadMore}
             >

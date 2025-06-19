@@ -16,7 +16,7 @@ const index = () => {
       <ProjectCard />
       <Call />
       <FandQ />
-      {/* <Error /> */}
+      <Error />
     </>
   );
 };
