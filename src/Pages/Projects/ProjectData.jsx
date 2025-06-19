@@ -1,6 +1,5 @@
-import React from "react";
-import ochi from "../../assets/img/ochi-1.png";
-
+import ochi from "../../assets/ProjectImage/ochi-1.png"; 
+import Significo from "../../assets/ProjectImage/Significo-1.png"; 
 
 export const fetchProjectData = async () => {
   // Simulate API delay
@@ -14,8 +13,8 @@ export const fetchProjectData = async () => {
       description: "Claim your unique, self-sovereign identity on the Bitcoin blockchain and take control of your digital presence.",
     },
     {
-      title: "Bridge your Bitcoin, start earning.",
-      imageUrl: "https://placehold.co/600x400/333/EEE?text=Bitcoin+Earning",
+      title: "Significo.",
+      imageUrl: typeof Significo === "string" ? Significo : (Significo?.default || ""),
       likes: 412,
       comments: 35,
       description: "Bridge your Bitcoin to DeFi platforms and start earning passive income with your assets.",

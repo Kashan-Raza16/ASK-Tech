@@ -11,25 +11,15 @@ import StudentSection from "../Pages/Student/index.jsx";
 import ProjectCard from "../Pages/Student/ProjectCard";
 import ProjectDetail from "../Pages/Projects/ProjectDetail.jsx";
 
-
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route index element={<Home />} />
       <Route path="About" element={<About />} />
       <Route path="Service" element={<Service />} />
-      {/* <Route path="Product" element={<Product />} /> */}
       <Route path="student-section" element={<StudentSection />} />
       <Route path="/projects" element={<ProjectCard />} />
       <Route path="/projects/:id" element={<ProjectDetail />} />
-      {/* <Route 
-      loader={() => {
-        // Simulating a data fetch for the student section
-        return { projectID: "12345" }; // Example project ID
-      }
-      }
-      path="project/:projectID" 
-      element={<Projects />} /> */}
     </Route>
   )
 );
