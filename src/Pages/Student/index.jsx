@@ -5,6 +5,7 @@ import DeliciouslySimpleSection from "./DeliciouslySimpleSection";
 import ProjectCard from "./ProjectCard";
 import FandQ from "./F&Q";
 import Call from "./Call";
+import Error from "../../UX/Error";
 
 const index = () => {
   return (
@@ -15,6 +16,7 @@ const index = () => {
       <ProjectCard />
       <Call />
       <FandQ />
+      <Error />
     </>
   );
 };

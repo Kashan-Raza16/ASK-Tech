@@ -13,14 +13,14 @@ const DeliciouslySimpleSection = () => {
       imageUrl: Jam,
       title: "Subscribe",
       description:
-        "Subscribing is as easy as opening up a jar of jam... well in theory. Just press the subscribe button below.",
+        "Subscribing is as easy as opening up a jar of ASK Tech... well in theory. Just press the subscribe button below.",
     },
     {
       id: 2,
       imageUrl: AddTask,
       title: "Add Tasks",
       description:
-        "Begin adding design tasks to your backlog. Add as many as you want and we'll get Jammin'!",
+        "Begin adding design tasks to your backlog. Add as many as you want and we'll get ASK Tech!",
     },
     {
       id: 3,

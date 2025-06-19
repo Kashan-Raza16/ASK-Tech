@@ -55,9 +55,9 @@ const Call = () => {
           <span className="flex items-center">
             <span className="w-2 h-2  rounded-full mr-2"></span>Top-tier team
           </span>
-          <span className="flex items-center">
+          {/* <span className="flex items-center">
             <span className="w-2 h-2 rounded-full mr-2"></span>Cancel anytime
-          </span>
+          </span> */}
         </div>
 
         <button
@@ -70,12 +70,12 @@ const Call = () => {
         </button>
 
         <p className="mt-8 text-sm text-gray-500 max-w-lg mx-auto relative z-10">
-          When subscribed to Jamm you are agreeing to our{" "}
+          When subscribed to ASK Tech you are agreeing to our{" "}
           <a href="#" className="text-pink-600 hover:underline">
             Terms of Service
           </a>
           . You'll receive an invite to your dedicated Trello board within 24
-          hours to manage your design requests.
+          hours to manage your project requests.
         </p>
 
         {/* Floating icons - adjust positioning and SVG paths/emojis as needed */}

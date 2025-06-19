@@ -5,7 +5,7 @@ const FandQ = () => {
 
   const faqs = [
     {
-      question: 'How is Jamm different from other subscription services?',
+      question: 'How is ASK Tech different from other subscription services?',
       answer:
         'When you work with Jamm, you work with top-notch individuals not just a single person. We put in the right expert to manage your account and to deliver the task/project at hand (branding, website, product, etc). Quality control, skill and process is our secret sauce.',
     },
@@ -30,7 +30,7 @@ const FandQ = () => {
         'This depends on your specific plan. Some premium plans allow for multiple active requests simultaneously to accelerate your project timelines.',
     },
     {
-      question: 'How quickly will I receive designs?',
+      question: 'How quickly will I receive project ?',
       answer:
         'Delivery times vary based on the complexity of the design and the current workload. However, we strive to deliver initial concepts and revisions promptly, typically within a few business days for most standard requests.',
     },

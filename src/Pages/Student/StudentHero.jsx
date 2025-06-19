@@ -1,6 +1,6 @@
 import React from 'react';
-import PinkBottleIllustration from '../../assets/img/UX1.png'; // Make sure to replace with your actual image paths
-import YellowToastIllustration from '../../assets/img/UX1.png'; // Make sure to replace with your actual image paths
+import PinkBottleIllustration from '../../assets/img/1.png'; // Make sure to replace with your actual image paths
+import YellowToastIllustration from '../../assets/img/2.png'; // Make sure to replace with your actual image paths
 
 const StudentHero= () => {
   return (
@@ -15,7 +15,7 @@ const StudentHero= () => {
         {/* Sub Text */}
         <p className="mt-6 text-lg md:text-xl text-[#4d4d56] max-w-2xl">
           Plug into a world-class design team, making your process faster,
-          more efficient, and scalable with easy monthly pricing.
+          more efficient, and scalable with easy  pricing.
         </p>
 
         {/* CTA Button */}
@@ -27,11 +27,19 @@ const StudentHero= () => {
         <p className="mt-4 text-sm text-[#4d4d56]">No worries, you can cancel any time!</p>
 
         {/* Characters */}
-        <div className="absolute left-0 bottom-0 md:bottom-auto md:top-1/2 transform md:-translate-y-1/2 w-24 md:w-40">
-          <img src="/paint.png" alt="Paint Character" className="w-full" />
+        <div className="absolute left-0 bottom-0 md:bottom-auto md:top-1/2 transform md:-translate-y-1/2 w-16 sm:w-24 md:w-40">
+          <img
+            src={PinkBottleIllustration}
+            alt="Paint Character"
+            className="w-full h-24 sm:h-40 md:h-60 object-contain"
+          />
         </div>
-        <div className="absolute right-0 bottom-0 md:bottom-auto md:top-1/2 transform md:-translate-y-1/2 w-24 md:w-40">
-          <img src="/toast.png" alt="Toast Character" className="w-full" />
+        <div className="absolute right-0 bottom-0 md:bottom-auto md:top-1/2 transform md:-translate-y-1/2 w-16 sm:w-24 md:w-40">
+          <img
+            src={YellowToastIllustration}
+            alt="Toast Character"
+            className="w-full h-24 sm:h-40 md:h-60 object-contain"
+          />
         </div>
       </div>
     </section>
