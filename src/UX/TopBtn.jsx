@@ -3,7 +3,7 @@ import React from 'react'
 const TopBtn = () => {
   return (
     <button
-      className="fixed bottom-8 z-50 right-8 bg-slate-500 text-white p-4 rounded-full shadow-lg hover:bg-slate-600 cursor-pointer transition duration-300"
+      className="fixed bottom-8 z-50 right-8 bg-blue-500 text-white p-4 rounded-full shadow-lg hover:bg-blue-700 cursor-pointer transition duration-300"
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       aria-label="Scroll to top"
       type="button"

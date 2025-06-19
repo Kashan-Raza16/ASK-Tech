@@ -135,53 +135,75 @@ ShotCard.propTypes = {
   comments: PropTypes.number,
 };
 
-// Data loader function
-const fetchProjectData = () => [
-  {
-    title: "Claim your self-sovereign identity on Bitcoin",
-    imageUrl: "https://placehold.co/600x400/000/FFF?text=Bitcoin+Identity",
-    likes: 256,
-    comments: 18,
-  },
-  {
-    title: "Bridge your Bitcoin, start earning.",
-    imageUrl: "https://placehold.co/600x400/333/EEE?text=Bitcoin+Earning",
-    likes: 412,
-    comments: 35,
-  },
-  {
-    title: "Explore the future of Bitcoin NFTs",
-    imageUrl: "https://placehold.co/600x400/444/FFF?text=Bitcoin+NFTs",
-    likes: 198,
-    comments: 22,
-  },
-  {
-    title: "Decentralized Finance on Bitcoin",
-    imageUrl: "https://placehold.co/600x400/555/FFF?text=Bitcoin+DeFi",
-    likes: 320,
-    comments: 27,
-  },
-  {
-    title: "Secure your assets with Bitcoin multisig",
-    imageUrl: "https://placehold.co/600x400/666/FFF?text=Bitcoin+Multisig",
-    likes: 150,
-    comments: 12,
-  },
-  {
-    title: "Bitcoin Layer 2 Solutions",
-    imageUrl: "https://placehold.co/600x400/777/FFF?text=Bitcoin+Layer+2",
-    likes: 275,
-    comments: 30,
-  },
-             
-];
+// Async data loader function
+const fetchProjectData = async () => {
+  // Simulate API delay
+  await new Promise((resolve) => setTimeout(resolve, 300));
+  return [
+    {
+      title: "Claim your self-sovereign identity on Bitcoin",
+      imageUrl: "https://placehold.co/600x400/000/FFF?text=Bitcoin+Identity",
+      likes: 256,
+      comments: 18,
+    },
+    {
+      title: "Bridge your Bitcoin, start earning.",
+      imageUrl: "https://placehold.co/600x400/333/EEE?text=Bitcoin+Earning",
+      likes: 412,
+      comments: 35,
+    },
+    {
+      title: "Explore the future of Bitcoin NFTs",
+      imageUrl: "https://placehold.co/600x400/444/FFF?text=Bitcoin+NFTs",
+      likes: 198,
+      comments: 22,
+    },
+    {
+      title: "Decentralized Finance on Bitcoin",
+      imageUrl: "https://placehold.co/600x400/555/FFF?text=Bitcoin+DeFi",
+      likes: 320,
+      comments: 27,
+    },
+    {
+      title: "Secure your assets with Bitcoin multisig",
+      imageUrl: "https://placehold.co/600x400/666/FFF?text=Bitcoin+Multisig",
+      likes: 150,
+      comments: 12,
+    },
+    {
+      title: "Bitcoin Layer 2 Solutions",
+      imageUrl: "https://placehold.co/600x400/777/FFF?text=Bitcoin+Layer+2",
+      likes: 275,
+      comments: 30,
+    },
+
+    {
+      title: "Bitcoin Payment Solutions for Merchants",
+      imageUrl: "https://placehold.co/600x400/888/FFF?text=Bitcoin+Payments",
+      likes: 400,
+      comments: 50,
+    },
+
+    {
+      title: "Bitcoin Wallets: Security and Usability",
+      imageUrl: "https://placehold.co/600x400/999/FFF?text=Bitcoin+Wallets",
+      likes: 220,
+      comments: 18, 
+    },
+  ];
+};
 
 const ProjectCard = () => {
-  const [projects, setProjects] = useState([]);
+  const [allProjects, setAllProjects] = useState([]);
+  const [visibleCount, setVisibleCount] = useState(6); // Initial number of projects to show
 
   useEffect(() => {
-    setProjects(fetchProjectData());
+    fetchProjectData().then((data) => setAllProjects(data));
   }, []);
+
+  const handleLoadMore = () => {
+    setVisibleCount(allProjects.length);
+  };
 
   return (
     <div className="min-h-screen bg-gray-50 font-sans text-gray-900 flex flex-col">
@@ -189,20 +211,22 @@ const ProjectCard = () => {
       <main className="container mx-auto p-8 flex-grow">
         <h2 className="text-2xl font-bold mb-6 text-gray-800">Most Popular Projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, idx) => (
+          {allProjects.slice(0, visibleCount).map((project, idx) => (
             <ShotCard key={idx} {...project} />
           ))}
         </div>
-        <div className="flex justify-center mt-10">
-          <button
-            className="px-8 py-3 bg-slate-600 cursor-pointer text-white font-bold rounded-lg shadow hover:bg-slate-800 transition-all duration-200 flex items-center gap-2"
-            style={{ minWidth: 160 }}
-          >
-            Load More
-          </button>
-        </div>
+        {visibleCount < allProjects.length && (
+          <div className="flex justify-center mt-10">
+            <button
+              className="px-8 py-3 bg-slate-600 cursor-pointer text-white font-bold rounded-lg shadow hover:bg-slate-800 transition-all duration-200 flex items-center gap-2"
+              style={{ minWidth: 160 }}
+              onClick={handleLoadMore}
+            >
+              Load More
+            </button>
+          </div>
+        )}
       </main>
-      
     </div>
   );
 };

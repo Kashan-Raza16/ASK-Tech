@@ -38,7 +38,7 @@ const Footer = () => {
         </h1>
       </div>
 
-      <footer className="w-full z-20 mb-5 max-w-7xl bg-white shadow-xl rounded-xl p-6 sm:p-8 md:p-10 lg:p-12">
+      <footer className="w-full z-20 mb-20 max-w-7xl bg-white shadow-xl rounded-xl p-6 sm:p-8 md:p-10 lg:p-12">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 md:gap-12 lg:gap-16">
           {/* Logo and Description */}
           <div className="flex flex-col items-start md:w-1/3 lg:w-2/5">
