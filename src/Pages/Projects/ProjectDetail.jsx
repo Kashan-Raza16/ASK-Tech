@@ -2,7 +2,7 @@ import Error from "../../UX/Error";
 import { useEffect, useState } from "react";
 import LoadingSpinner from "../../UX/LoadingSpinner";
 import { useParams, useNavigate } from "react-router-dom";
-import { fetchProjectData } from "../Projects/ProjectData";
+import { fetchProjectData } from "./ProjectData";
 
 const ProjectDetail = () => {
   const { id } = useParams();

@@ -4,7 +4,7 @@ import p1 from '../../assets/img/p1.jpg'
 import p2 from '../../assets/img/p2.jpg' 
 import p3 from '../../assets/img/p3.jpg' 
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import {categories,popularOptions,projects} from '../../Services/Storage'
+import {categories,popularOptions,projects} from '../../Redux/Storage'
 
 // Import Swiper styles
 import "swiper/css";
