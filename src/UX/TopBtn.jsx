@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { use } from "react";
+import { useLocation } from "react-router-dom";
 
 const TopBtn = () => {
+  const location = useLocation();
+  if (location.pathname === "/Login") return null;
+
   return (
     <button
       className="fixed bottom-8 z-50 right-8 bg-blue-500 text-white p-4 rounded-full shadow-lg hover:bg-blue-700 cursor-pointer transition duration-300"
