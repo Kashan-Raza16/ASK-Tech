@@ -2,11 +2,15 @@ import { gsap } from "gsap";
 import Logo from "../../assets/img/logo-min.png"
 import React, { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { FaXTwitter, FaInstagram, FaLinkedin, FaGithub, FaCube } from "react-icons/fa6";
+import { FaXTwitter, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa6";
+import { useLocation } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Footer = () => {
+  const location = useLocation();
+  if (location.pathname === "/Login") return null;
+
   useEffect(() => {
     gsap.to(".ask-tech", {
       y: 130,

@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import { Search, Menu, X } from "lucide-react";
 import Logo from "../../assets/img/ask logo.png";
-import {NavLink, useLocation } from "react-router-dom";
+import {NavLink, useLocation, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Hide navbar on /student-section
-  // if (location.pathname === "/student-section") return null;
+  const navigate = useNavigate();
+
+  // Hide navbar on /Login
+  if (location.pathname === "/Login") return null;
 
   return (
     <nav className="navbar fixed top-0 z-45 w-full text-gray-700 text-[18px] px-4 md:px-6 py-6 flex items-center justify-between">
@@ -88,6 +90,7 @@ const Header = () => {
           <Search size={22} />
         </button>
         <button
+          onClick={() => navigate("/Login")}
           name="Login-Button"
           className="bg-white cursor-pointer text-black px-4 py-2 rounded-full font-medium hidden md:inline-block hover:bg-gray-300 transition-colors duration-200"
         >
