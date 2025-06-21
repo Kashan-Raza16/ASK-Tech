@@ -18,16 +18,10 @@ const About = () => {
           />
         </svg>
         <h1 className="text-4xl font-extrabold mb-2 text-center drop-shadow-lg">
-          About Us
+          Coming Soon
         </h1>
-        <p className="text-base text-slate-100 text-center mb-2">
-          Welcome to ASK-Tech! We are passionate about building innovative
-          solutions for students and professionals.
-        </p>
         <p className="text-lg text-slate-200 text-center mb-4">
           The About Us page is under construction.
-          <br />
-          We are working hard to bring you something awesome.
         </p>
         <button className="mt-2 px-6 py-2 bg-yellow-400 text-slate-900 font-semibold rounded-full shadow hover:bg-yellow-300 transition">
           Back to Home
