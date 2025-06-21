@@ -11,6 +11,7 @@ const Header = () => {
 
   // Hide navbar on /Login
   if (location.pathname === "/Login") return null;
+  if (location.pathname === "/dashboard") return null;
 
   return (
     <nav className="navbar fixed top-0 z-45 w-full text-gray-700 text-[18px] px-4 md:px-6 py-6 flex items-center justify-between">

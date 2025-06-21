@@ -10,6 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Footer = () => {
   const location = useLocation();
   if (location.pathname === "/Login") return null;
+  if (location.pathname === "/dashboard") return null;
 
   useEffect(() => {
     gsap.to(".ask-tech", {
