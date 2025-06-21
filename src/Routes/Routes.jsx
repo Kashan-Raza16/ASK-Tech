@@ -12,6 +12,7 @@ import StudentSection from "../Pages/Student/index.jsx";
 import ProjectCard from "../Pages/Student/ProjectCard";
 import ProjectDetail from "../Pages/Projects/ProjectDetail.jsx";
 import Dashboard from "../Pages/Dashbord/Dashboard.jsx";
+// import Dashboards from "../Pages/Dashbord/Dashboards.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
       <Route path="/projects" element={<ProjectCard />} />
       <Route path="/projects/:id" element={<ProjectDetail />} />
       <Route path="/login" element={<Login />} />
+      {/* <Route path="/dashboard" element={<Dashboards />} /> */}
       <Route path="/dashboard" element={<Dashboard />} />
     </Route>
   )

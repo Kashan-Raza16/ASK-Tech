@@ -79,7 +79,7 @@ function Dashboard() {
       {/* Sidebar */}
       <aside className="w-64 bg-white shadow-lg p-6 flex flex-col justify-between rounded-r-xl">
         <div>
-          <div className="text-2xl font-bold text-blue-700 mb-8">DashStack</div>
+          <div className="text-2xl font-bold text-blue-700 mb-8">ASK Tech.</div>
           <nav>
             <ul>
               {sidebarItems.map((item) => (
@@ -369,3 +369,5 @@ const Card = ({ title, value, change, color, iconBg, icon }) => (
 );
 
 export default Dashboard;
+
+
