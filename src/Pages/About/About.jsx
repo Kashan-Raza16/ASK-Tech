@@ -1,6 +1,10 @@
 import React from "react";
+import {useNavigate } from "react-router-dom";
 
 const About = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className="bg-gradient-to-br from-slate-200 via-slate-400 to-slate-800 text-white h-screen flex items-center justify-center">
       <div className="bg-white/10 backdrop-blur-md rounded-xl shadow-2xl p-10 flex flex-col items-center max-w-md w-full animate-fade-in">
@@ -23,7 +27,9 @@ const About = () => {
         <p className="text-lg text-slate-200 text-center mb-4">
           The About Us page is under construction.
         </p>
-        <button className="mt-2 px-6 py-2 bg-yellow-400 text-slate-900 font-semibold rounded-full shadow hover:bg-yellow-300 transition">
+        <button className="mt-2 px-6 py-2 bg-yellow-400 text-slate-900 font-semibold rounded-full shadow hover:bg-yellow-300 transition"
+          onClick={() => navigate("/")}
+        >
           Back to Home
         </button>
         <span className="text-xs text-slate-400 mt-4">
