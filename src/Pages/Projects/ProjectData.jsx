@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from "react";
 import ochi from "../../assets/ProjectImage/ochi-1.png"; 
 import Significo from "../../assets/ProjectImage/Significo-1.png"; 
 
@@ -69,3 +70,31 @@ export const fetchProjectData = async () => {
     index: idx,
   }));
 };
+
+const ProjectList = () => {
+  const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetchProjectData().then((data) => {
+      setProjects(data);
+      setLoading(false);
+    });
+  }, []);
+
+  if (loading) return <div>Loading...</div>;
+
+  return (
+    <div>
+      {projects.map((project) => (
+        <div key={project.key}>
+          <h3>{project.title}</h3>
+          <img src={project.imageUrl} alt={project.title} />
+          <p>{project.description}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default ProjectList;

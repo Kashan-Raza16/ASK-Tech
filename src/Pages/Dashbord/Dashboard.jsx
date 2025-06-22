@@ -2,9 +2,12 @@ import React, { useState, useEffect } from 'react';
 import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,
   PieChart, Pie, Cell, BarChart, Bar
-} from 'recharts'; // Using recharts for charts
-import { Home, Package, Heart, MessageSquare, List, User, Briefcase, CheckSquare, Calendar, Table, Search, Bell, Settings, LogOut, ChevronDown, ChevronUp } from 'lucide-react'; // Using lucide-react for icons
-import { useNavigate } from "react-router-dom"; // Add this import at the top if not present
+} from 'recharts';
+import { Home, Package, Heart, MessageSquare, List, User, Briefcase, CheckSquare, Calendar, Table, Search, Bell, Settings, LogOut, ChevronDown, ChevronUp } from 'lucide-react';
+import { useNavigate } from "react-router-dom";
+import UXError from '../../UX/Error'; 
+
+
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#A281E1', '#8884d8', '#82ca9d']; // Colors for charts
 
@@ -52,7 +55,17 @@ const itemPurchaseData = [
 function Dashboard() {
   const [activeMenuItem, setActiveMenuItem] = useState('Dashboard');
   const [messagesOpen, setMessagesOpen] = useState(false);
-  const navigate = useNavigate(); // Add this line
+  const [hasError, setHasError] = useState(false); // <-- Error state
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Example: You can set error based on any condition or API failure
+    // setHasError(true); // Uncomment to test error boundary
+  }, []);
+
+  if (hasError) {
+    return <UXError />; // <-- Show UX error if error occurs
+  }
 
   const sidebarItems = [
     { name: 'Dashboard', icon: Home },
@@ -69,10 +82,6 @@ function Dashboard() {
     { name: 'Calendar', icon: Calendar },
     { name: 'Table', icon: Table },
   ];
-
-  useEffect(() => {
-    // This could be used for initial data fetching or auth checks
-  }, []);
 
   return (
     <div className="flex min-h-screen bg-gray-100 font-inter">
